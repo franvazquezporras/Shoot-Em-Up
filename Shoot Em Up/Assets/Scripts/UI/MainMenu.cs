@@ -25,6 +25,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Slider masterVolume;
     [SerializeField] private Slider musicVolume;
     [SerializeField] private Slider soundVolume;
+
     [SerializeField] private Button soundButton;
     [SerializeField] private Button musicButton;
     [SerializeField] private Sprite OnMusic;
@@ -39,9 +40,21 @@ public class MainMenu : MonoBehaviour
     /*********************************************************************************************************************************/
     /*Funcion: Start                                                                                                                 */
     /*Desarrollador: Vazquez                                                                                                         */
-    /*Descripción: Obtiene las resoluciones posibles de la pantalla para generarlas en el dropbox de resoluciones sin que se repitan */
+    /*Descripción: Obtiene las resoluciones y carga los parametros guardados de los playerpref                                       */
     /*********************************************************************************************************************************/
     private void Start()
+    {
+        TakeAllResolutions();
+        LoadOptionsUI();
+        LoadSetting();
+    }
+
+    /*********************************************************************************************************************************/
+    /*Funcion: TakeAllResolutions                                                                                                    */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Obtiene las resoluciones posibles de la pantalla para generarlas en el dropbox de resoluciones sin que se repitan */
+    /*********************************************************************************************************************************/
+    private void TakeAllResolutions()
     {
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
@@ -58,10 +71,7 @@ public class MainMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
-        LoadOptionsUI();
-        LoadSetting();
     }
-
     /*********************************************************************************************************************************/
     /*Funcion: SetResolution                                                                                                         */
     /*Desarrollador: Vazquez                                                                                                         */
@@ -177,9 +187,13 @@ public class MainMenu : MonoBehaviour
     /*********************************************************************************************************************************/
     public void ShowPanel(GameObject showImage)
     {
+        StartCoroutine(Show(showImage));
+    }
+    private IEnumerator Show(GameObject showImage)
+    {
+        yield return new WaitForSeconds(1);
         showImage.gameObject.SetActive(true);
     }
-
     /*********************************************************************************************************************************/
     /*Funcion: Hide                                                                                                                  */
     /*Desarrollador: Vazquez                                                                                                         */
