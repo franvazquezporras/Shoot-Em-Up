@@ -8,6 +8,10 @@ public class MainMenu : MonoBehaviour
 {
 
     //Variables    
+    [Header("Menu References")]
+    [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject optionMenu;
+
     [Header("Resolution")]
     [SerializeField] private Dropdown resolutionDropdown;
     Resolution[] resolutions;
@@ -22,6 +26,7 @@ public class MainMenu : MonoBehaviour
 
     [Header("Sounds")]
     [SerializeField] private AudioMixer audioMixer;
+    [SerializeField] private AudioSource click;
     [SerializeField] private Slider masterVolume;
     [SerializeField] private Slider musicVolume;
     [SerializeField] private Slider soundVolume;
@@ -34,7 +39,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Sprite OffSound;
     private bool sound;
     private bool music;
-
+    private bool firstLoad = true;
 
     private bool update = false;
     /*********************************************************************************************************************************/
@@ -43,10 +48,11 @@ public class MainMenu : MonoBehaviour
     /*Descripción: Obtiene las resoluciones y carga los parametros guardados de los playerpref                                       */
     /*********************************************************************************************************************************/
     private void Start()
-    {
-        TakeAllResolutions();
-        LoadOptionsUI();
+    {        
+        TakeAllResolutions();        
+        LoadOptionsUI();        
         LoadSetting();
+        firstLoad = false;
     }
 
     /*********************************************************************************************************************************/
@@ -82,6 +88,8 @@ public class MainMenu : MonoBehaviour
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        if (!firstLoad)
+            update = true;
     }
 
 
@@ -94,6 +102,8 @@ public class MainMenu : MonoBehaviour
     public void SetMasterVolume(float volume)
     {
         audioMixer.SetFloat("masterVolume", Mathf.Log10(volume) * 20);
+        if (!firstLoad)
+            update = true;
     }
 
     /*********************************************************************************************************************************/
@@ -117,8 +127,9 @@ public class MainMenu : MonoBehaviour
                 music = false;
                 musicButton.image.sprite = OnMusic;
             }
-
         }
+        if (!firstLoad)
+            update = true;
     }
 
     /*********************************************************************************************************************************/
@@ -129,7 +140,7 @@ public class MainMenu : MonoBehaviour
     /*********************************************************************************************************************************/
     public void SetSoundVolume(float volume)
     {
-        audioMixer.SetFloat("soundsVolume", Mathf.Log10(volume) * 20);
+        audioMixer.SetFloat("soundVolume", Mathf.Log10(volume) * 20);
         if (soundButton != null)
         {
             if (volume <= -0.001)
@@ -142,8 +153,9 @@ public class MainMenu : MonoBehaviour
                 sound = false;
                 soundButton.image.sprite = OnSound;
             }
-
         }
+        if (!firstLoad)
+            update = true;
     }
 
     /*********************************************************************************************************************************/
@@ -155,6 +167,8 @@ public class MainMenu : MonoBehaviour
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+        if (!firstLoad)
+            update = true;
     }
 
     /*********************************************************************************************************************************/
@@ -166,6 +180,8 @@ public class MainMenu : MonoBehaviour
     public void SetFullScreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
+        if (!firstLoad)
+            update = true;
     }
 
     /*********************************************************************************************************************************/
@@ -177,8 +193,16 @@ public class MainMenu : MonoBehaviour
     public void SetBrightness(float value)
     {
         brightnessPanel.color = new Color(brightnessPanel.color.r, brightnessPanel.color.g, brightnessPanel.color.b, value);
+        if (!firstLoad)
+            update = true;
     }
 
+
+    public void PlaySoundClick()
+    {
+        if (!firstLoad)
+            click.Play();
+    }
     /*********************************************************************************************************************************/
     /*Funcion: ShowPanel                                                                                                             */
     /*Desarrollador: Vazquez                                                                                                         */
@@ -189,6 +213,12 @@ public class MainMenu : MonoBehaviour
     {
         StartCoroutine(Show(showImage));
     }
+    /*********************************************************************************************************************************/
+    /*Funcion: Show                                                                                                                  */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Parametros de entrada: showImage (panel a mostrar)                                                                             */
+    /*Descripción: Activa el objeto que recibe como parametro tras un segundo                                                        */
+    /*********************************************************************************************************************************/
     private IEnumerator Show(GameObject showImage)
     {
         yield return new WaitForSeconds(1);
@@ -259,7 +289,7 @@ public class MainMenu : MonoBehaviour
         brightnessSlider.value = PlayerPrefs.GetFloat("Brightness", 0f);
         masterVolume.value = PlayerPrefs.GetFloat("masterVolume", 0.5f);
         musicVolume.value = PlayerPrefs.GetFloat("musicVolume", 0.5f);
-        soundVolume.value = PlayerPrefs.GetFloat("soundVolume", 0.5f);
+        soundVolume.value = PlayerPrefs.GetFloat("soundVolume", 0.5f);        
     }
 
     /*********************************************************************************************************************************/
@@ -271,6 +301,7 @@ public class MainMenu : MonoBehaviour
     {
         LoadSetting();
         LoadOptionsUI();
+        update = false;
     }
 
     /*********************************************************************************************************************************/
@@ -281,6 +312,7 @@ public class MainMenu : MonoBehaviour
     public void Accept()
     {
         SaveSetting();
+        update = false;
     }
 
     /*********************************************************************************************************************************/
@@ -312,7 +344,6 @@ public class MainMenu : MonoBehaviour
     {
         Time.timeScale = 1;
         Hide(hideImage);
-
     }
     /*********************************************************************************************************************************/
     /*Funcion: Resume                                                                                                                */
@@ -371,6 +402,18 @@ public class MainMenu : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(scene);
     }
+
+    public void ShowUpdatePanel(GameObject panel)
+    {
+        if (update)
+            ShowPanel(panel);
+        else
+        {
+            Hide(panel.transform.parent.gameObject);
+            ShowPanel(mainMenu);
+        }
+            
+    }
     /*********************************************************************************************************************************/
     /*Funcion: HideObject                                                                                                            */
     /*Desarrollador: Vazquez                                                                                                         */
@@ -382,4 +425,5 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         hideImage.SetActive(false);
     }
+   
 }
