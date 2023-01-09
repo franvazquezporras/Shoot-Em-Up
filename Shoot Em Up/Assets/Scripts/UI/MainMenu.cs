@@ -197,7 +197,11 @@ public class MainMenu : MonoBehaviour
             update = true;
     }
 
-
+    /*********************************************************************************************************************************/
+    /*Funcion: PlaySoundClick                                                                                                        */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Reproduce el sonido de click                                                                                      */
+    /*********************************************************************************************************************************/
     public void PlaySoundClick()
     {
         if (!firstLoad)
@@ -403,6 +407,12 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    /*********************************************************************************************************************************/
+    /*Funcion: ShowUpdatePanel                                                                                                       */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Parametros de entrada: panel (panel a mostrar)                                                                                 */
+    /*Descripción: Muestra la pantalla de alerta del menu de opciones al cancelar si se ha realizado modificacion sin guardar        */
+    /*********************************************************************************************************************************/
     public void ShowUpdatePanel(GameObject panel)
     {
         if (update)
