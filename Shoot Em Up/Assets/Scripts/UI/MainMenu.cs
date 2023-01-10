@@ -33,10 +33,6 @@ public class MainMenu : MonoBehaviour
 
     [SerializeField] private Button soundButton;
     [SerializeField] private Button musicButton;
-    [SerializeField] private Sprite OnMusic;
-    [SerializeField] private Sprite OffMusic;
-    [SerializeField] private Sprite OnSound;
-    [SerializeField] private Sprite OffSound;
     private bool sound;
     private bool music;
     private bool firstLoad = true;
@@ -120,12 +116,12 @@ public class MainMenu : MonoBehaviour
             if (volume <= -0.001)
             {
                 music = true;
-                musicButton.image.sprite = OffMusic;
+                musicButton.transform.GetChild(1).gameObject.SetActive(true);
             }
             else
             {
                 music = false;
-                musicButton.image.sprite = OnMusic;
+                musicButton.transform.GetChild(1).gameObject.SetActive(false);
             }
         }
         if (!firstLoad)
@@ -146,12 +142,12 @@ public class MainMenu : MonoBehaviour
             if (volume <= -0.001)
             {
                 sound = true;
-                soundButton.image.sprite = OffSound;
+                soundButton.transform.GetChild(1).gameObject.SetActive(true);
             }
             else
             {
                 sound = false;
-                soundButton.image.sprite = OnSound;
+                soundButton.transform.GetChild(1).gameObject.SetActive(false);
             }
         }
         if (!firstLoad)
@@ -373,7 +369,7 @@ public class MainMenu : MonoBehaviour
         {
             if (music)
             {
-                if (PlayerPrefs.GetFloat("musicVolume", 0.5f) <= -0.001f)
+                if (PlayerPrefs.GetFloat("musicVolume") <= -0.001f)
                     PlayerPrefs.SetFloat("musicVolume", 0.5f);
                 SetMusicVolume(PlayerPrefs.GetFloat("musicVolume", 0.5f));
                 LoadOptionsUI();
@@ -385,7 +381,7 @@ public class MainMenu : MonoBehaviour
         {
             if (sound)
             {
-                if (PlayerPrefs.GetFloat("soundVolume", 0.5f) <= -0.001f)
+                if (PlayerPrefs.GetFloat("soundVolume") <= -0.001f)
                     PlayerPrefs.SetFloat("soundVolume", 0.5f);
                 SetSoundVolume(PlayerPrefs.GetFloat("soundVolume", 0.5f));
                 LoadOptionsUI();
@@ -436,4 +432,11 @@ public class MainMenu : MonoBehaviour
         hideImage.SetActive(false);
     }
    
+
+
+
+
+
+    //Ranking
+
 }
