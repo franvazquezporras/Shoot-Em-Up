@@ -44,7 +44,7 @@ public class Ranking : MonoBehaviour
 
     private void crearEntradaNueva(EntradaRecord entradarecord, Transform posicion, List<Transform> posicionEnTabla)
     {
-        float posicionEntrada = 25f;
+        float posicionEntrada = 15f;
         Transform entradaNueva = Instantiate(entradaRecord, posicion);
         RectTransform entradaRT = entradaNueva.GetComponent<RectTransform>();
         entradaRT.anchoredPosition = new Vector2(0, -posicionEntrada * posicionEnTabla.Count);
