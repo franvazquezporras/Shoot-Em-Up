@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UILanguageTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 41ed2e52e5b7185469acb426cf5a3674, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 16520495104
+    m_Localized: Start
+    m_Metadata:
+      m_Items: []
+  - m_Id: 97743192064
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124091809792
+    m_Localized: Ranking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148628488192
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2981994086400
+    m_Localized: Master Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3106913042432
+    m_Localized: Music Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3243534106624
+    m_Localized: Sound Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3383510614016
+    m_Localized: Brightness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3484975022080
+    m_Localized: Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3577866272768
+    m_Localized: FullScreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3660837994496
+    m_Localized: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3746380824576
+    m_Localized: Quality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3809198915584
+    m_Localized: Cancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3923929907200
+    m_Localized: Yes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3975796670464
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4032860176384
+    m_Localized: You made changes, do you want to leave without saving them?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4306614009856
+    m_Localized: Back to Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4501481373696
+    m_Localized: Position
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4570192461824
+    m_Localized: Score
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4759414292480
+    m_Localized: Are you sure you want to close the game?
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1

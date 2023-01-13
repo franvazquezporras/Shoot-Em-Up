@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UILanguageTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UILanguageTable
+  m_TableCollectionNameGuidString: 41ed2e52e5b7185469acb426cf5a3674
+  m_Entries:
+  - m_Id: 16520495104
+    m_Key: TStart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 97743192064
+    m_Key: TOptions
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124091809792
+    m_Key: TRanking
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148628488192
+    m_Key: TQuit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2981994086400
+    m_Key: TMasterVolume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3106913042432
+    m_Key: TMusicVolume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3243534106624
+    m_Key: TSoundVolume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3383510614016
+    m_Key: TBrightness
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3484975022080
+    m_Key: TSave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3577866272768
+    m_Key: TFullScreen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3660837994496
+    m_Key: TResolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3746380824576
+    m_Key: TQuality
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3809198915584
+    m_Key: TCancel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3923929907200
+    m_Key: TYes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3975796670464
+    m_Key: TNo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4032860176384
+    m_Key: TLeaveOptionsWithoutSave
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4306614009856
+    m_Key: TBackToMenu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4501481373696
+    m_Key: TPosition
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4570192461824
+    m_Key: TScore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4759414292480
+    m_Key: TLeaveGame
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    id: 0
+  references:
+    version: 1
+    00000000:
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1673544318530

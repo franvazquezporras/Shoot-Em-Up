@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UILanguageTable_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 41ed2e52e5b7185469acb426cf5a3674, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 16520495104
+    m_Localized: Iniciar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 97743192064
+    m_Localized: Opciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 124091809792
+    m_Localized: Records
+    m_Metadata:
+      m_Items: []
+  - m_Id: 148628488192
+    m_Localized: Salir
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2981994086400
+    m_Localized: "Volumen M\xE1ster"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3106913042432
+    m_Localized: "Volumen M\xFAsica"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3243534106624
+    m_Localized: Volumen Sonidos
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3383510614016
+    m_Localized: Brillo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3484975022080
+    m_Localized: Guardar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3577866272768
+    m_Localized: Pantalla Completa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3660837994496
+    m_Localized: "Resoluci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3746380824576
+    m_Localized: Calidad
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3809198915584
+    m_Localized: Cancelar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3923929907200
+    m_Localized: Si
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3975796670464
+    m_Localized: No
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4032860176384
+    m_Localized: "Hicistes cambios, \xBFest\xE1s seguro de salir sin guardarlos?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4306614009856
+    m_Localized: "Volver al men\xFA"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4501481373696
+    m_Localized: "Posici\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4570192461824
+    m_Localized: "Puntuaci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4759414292480
+    m_Localized: "\xBFEst\xE1s seguro de que quieres cerrar el juego?"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 1
