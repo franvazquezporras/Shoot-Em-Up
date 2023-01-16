@@ -7,8 +7,9 @@ public class ScoreControl : MonoBehaviour
 {
     private int playerScore = 0;
     [SerializeField] private Text scoreText;
+    
     private void Awake()
-    {
+    {        
         UpdateText();
         StartCoroutine(sumar());
     }

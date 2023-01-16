@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
-{
-    private int maxHealth = 100;
-    private int currentHealth;
+{    
+    PlayerController player;
     [SerializeField] private Text healthText;
     [SerializeField] private Slider lifeBar;
 
     private void Awake()
     {
-        currentHealth = maxHealth;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        lifeBar.maxValue = player.GetMaxHealth();
         InitHealthBar();
     }
 
@@ -20,14 +20,14 @@ public class HealthBar : MonoBehaviour
     {
         InitHealthBar();
         //Codigo para testear
-        if (Input.GetKeyDown(KeyCode.P) && currentHealth>0)
-            currentHealth--;
+        if (Input.GetKeyDown(KeyCode.P) && player.GetCurrentHealth()>0)
+            player.SetCurrentHealth(-1);
     }
 
     private void InitHealthBar()
     {
-        healthText.text = currentHealth + "/" + maxHealth;
-        lifeBar.value = currentHealth;
+        healthText.text = player.GetCurrentHealth() + "/" + player.GetMaxHealth();
+        lifeBar.value = player.GetCurrentHealth();
 
     }
 
