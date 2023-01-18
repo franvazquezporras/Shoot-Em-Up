@@ -15,7 +15,7 @@ TagManager:
   - Particle
   - Enemy
   - Player
-  - 
+  - Projectile
   - 
   - 
   - 
@@ -41,4 +41,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Projectible
+    uniqueID: 3478444151
+    locked: 0
+  - name: Player
+    uniqueID: 1878591489
     locked: 0

@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
         
         if(collision.gameObject.layer == Layers.PLAYER)
         {
-            collision.gameObject.GetComponent<PlayerController>().GetDamage();
+            collision.gameObject.GetComponent<PlayerController>().GetDamage(-25);
             GetDamage();
         }
             

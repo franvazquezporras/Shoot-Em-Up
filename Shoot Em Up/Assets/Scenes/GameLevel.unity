@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0042698826, g: 0.0042698826, b: 0.0042698826, a: 1}
+  m_IndirectSpecularColor: {r: 0.00031807474, g: 0.00031807474, b: 0.00031807474, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2243,7 +2243,7 @@ MonoBehaviour:
   speed: 0
   canShoot: 0
   fireRate: 0
-  health: 0
+  health: 2
 --- !u!1 &1489370092
 GameObject:
   m_ObjectHideFlags: 0
@@ -3738,14 +3738,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5073971836432768149, guid: d6c45342f1cc1fa47b2e3d0f443c47cf, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5073971836587014954, guid: d6c45342f1cc1fa47b2e3d0f443c47cf, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 5073971837323934792, guid: d6c45342f1cc1fa47b2e3d0f443c47cf, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -3793,10 +3785,6 @@ PrefabInstance:
     - target: {fileID: 5073971837323934794, guid: d6c45342f1cc1fa47b2e3d0f443c47cf, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5073971837323934794, guid: d6c45342f1cc1fa47b2e3d0f443c47cf, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c45342f1cc1fa47b2e3d0f443c47cf, type: 3}
@@ -3850,6 +3838,14 @@ PrefabInstance:
     - target: {fileID: 6730135792224810191, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730135792224810192, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730135792224810192, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1878591489
       objectReference: {fileID: 0}
     - target: {fileID: 6730135792224810194, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
       propertyPath: m_Name
