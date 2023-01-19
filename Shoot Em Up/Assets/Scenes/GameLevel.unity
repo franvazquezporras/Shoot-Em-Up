@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.00031807474, g: 0.00031807474, b: 0.00031807474, a: 1}
+  m_IndirectSpecularColor: {r: 0.10287184, g: 0.11665181, b: 0.17396292, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -355,6 +355,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210042095}
   m_CullTransparentMesh: 1
+--- !u!1 &269270492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3103582225767365860, guid: 9cb20efcd3864bf44af846bcd9a76960, type: 3}
+  m_PrefabInstance: {fileID: 3103582226463837385}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &269270493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269270492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a6048393b792b64690402560ae107d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rate: 2
+  enemies:
+  - {fileID: 6730135792224810194, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
+  waves: 3
 --- !u!1 &284883677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,50 +2221,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthText: {fileID: 1760111466}
   lifeBar: {fileID: 859830728}
---- !u!1 &1411043117 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6730135792224810194, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
-  m_PrefabInstance: {fileID: 6730135791485942783}
-  m_PrefabAsset: {fileID: 0}
---- !u!50 &1411043121
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411043117}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 1
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &1411043122
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1411043117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cece7d7b58d4fe24581ccf5e7b074bbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xSpeed: 6
-  ySpeed: 0
-  speed: 0
-  canShoot: 0
-  fireRate: 0
-  health: 2
 --- !u!1 &1489370092
 GameObject:
   m_ObjectHideFlags: 0
@@ -3801,11 +3778,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6730135792224810191, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.53
+      value: 11.33
       objectReference: {fileID: 0}
     - target: {fileID: 6730135792224810191, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.31
+      value: -0.8
       objectReference: {fileID: 0}
     - target: {fileID: 6730135792224810191, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3839,25 +3816,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 6730135792224810192, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730135792224810192, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 1878591489
-      objectReference: {fileID: 0}
     - target: {fileID: 6730135792224810194, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
       propertyPath: m_Name
       value: Basic Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730135792224810194, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6730135792224810194, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
-      propertyPath: m_TagString
-      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}

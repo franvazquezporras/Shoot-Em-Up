@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     private Rigidbody2D rb2d;
 
-    [SerializeField] private float xSpeed = 6;
+    [SerializeField] private float xSpeed = 3;
     [SerializeField] private float ySpeed;
 
     [SerializeField] private float speed;
