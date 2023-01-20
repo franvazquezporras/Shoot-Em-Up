@@ -9,7 +9,12 @@ public class Projectile : MonoBehaviour
 
     private void Awake()
     {
+        
         rb2d = GetComponent<Rigidbody2D>();
+    }
+    private void Start()
+    {
+        Destroy(gameObject, 5);
     }
 
     public void SetDirection(){ direction *= -1;}

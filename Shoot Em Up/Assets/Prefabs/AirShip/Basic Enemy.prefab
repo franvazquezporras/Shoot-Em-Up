@@ -151,9 +151,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cece7d7b58d4fe24581ccf5e7b074bbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
   xSpeed: 6
   ySpeed: 0
   speed: 0
   canShoot: 0
   fireRate: 0
-  health: 2
+  health: 1

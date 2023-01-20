@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private Rigidbody2D rb2d;
+    [SerializeField] private GameObject bullet;
 
     [SerializeField] private float xSpeed = 3;
     [SerializeField] private float ySpeed;
@@ -22,7 +23,12 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Destroy(gameObject, 30);
+        if (canShoot)
+        {
+            fireRate = fireRate + (Random.Range(fireRate / -2, fireRate / 2));
+            InvokeRepeating("Shoot", fireRate, fireRate);
+        }
     }
 
     // Update is called once per frame
@@ -45,11 +51,16 @@ public class Enemy : MonoBehaviour
     public void GetDamage()
     {
         health--;
-        if (health == 0)
+        if (health <= 0)
             Die();
     }
     private void Die()
     {
         Destroy(gameObject);
+    }
+    private void Shoot()
+    {
+        GameObject temp = (GameObject)Instantiate(bullet, transform.position, Quaternion.Euler(0f, 0f, 90f));
+        temp.GetComponent<Projectile>().SetDirection();
     }
 }
