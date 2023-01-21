@@ -6,24 +6,26 @@ public class Enemy : MonoBehaviour
 {
     private Rigidbody2D rb2d;
     [SerializeField] private GameObject bullet;
+    [SerializeField] private GameObject explotion;
 
     [SerializeField] private float xSpeed = 3;
     [SerializeField] private float ySpeed;
-
-    [SerializeField] private float speed;
+    public int score;
+    
     [SerializeField] private bool canShoot;
     [SerializeField] private float fireRate;
     [SerializeField] private float health;
 
-
+    private ScoreControl scoreControl;
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        scoreControl = GameObject.FindGameObjectWithTag("GameController").GetComponent<ScoreControl>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 30);
+     
         if (canShoot)
         {
             fireRate = fireRate + (Random.Range(fireRate / -2, fireRate / 2));
@@ -56,6 +58,8 @@ public class Enemy : MonoBehaviour
     }
     private void Die()
     {
+        Instantiate(explotion, transform.position, Quaternion.identity);
+        scoreControl.SetPlayerScore(score);
         Destroy(gameObject);
     }
     private void Shoot()

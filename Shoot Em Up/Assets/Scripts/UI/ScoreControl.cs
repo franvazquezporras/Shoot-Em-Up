@@ -10,10 +10,13 @@ public class ScoreControl : MonoBehaviour
     
     private void Awake()
     {        
-        UpdateText();
-        StartCoroutine(sumar());
+        UpdateText();        
     }
-    
+
+    private void Update()
+    {
+        UpdateText();
+    }
     public void SetPlayerScore(int score){playerScore += score;
         UpdateText();
     }
@@ -24,14 +27,4 @@ public class ScoreControl : MonoBehaviour
         scoreText.text = playerScore.ToString();
     }
 
-    IEnumerator sumar()
-    {
-        for(int i = 0; i < 3000; i++)
-        {
-            SetPlayerScore(100);
-            yield return new WaitForSeconds(1);
-        }
-        
-        yield return new WaitForEndOfFrame();
-    }
 }

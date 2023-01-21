@@ -12,11 +12,7 @@ public class Projectile : MonoBehaviour
         
         rb2d = GetComponent<Rigidbody2D>();
     }
-    private void Start()
-    {
-        Destroy(gameObject, 5);
-    }
-
+    
     public void SetDirection(){ direction *= -1;}
 
     private void Update()

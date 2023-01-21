@@ -224,7 +224,7 @@ Transform:
   m_GameObject: {fileID: 5073971837323934794}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -6.71, y: -0.12, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 5073971836432768148}
   - {fileID: 5073971836587014953}
@@ -298,6 +298,7 @@ MonoBehaviour:
   cannons:
   - {fileID: 405584307}
   projectile: {fileID: 3402350098004741224, guid: 2e8112961dc649e439a88ce58b1aca9d, type: 3}
+  explotion: {fileID: 8038344524183138613, guid: 0277167a12290af47801444830a2be97, type: 3}
 --- !u!50 &5073971837323934789
 Rigidbody2D:
   serializedVersion: 4

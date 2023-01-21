@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private bool isAlive = true;
     [SerializeField] private GameObject [] cannons;
     [SerializeField] private GameObject projectile;
+    [SerializeField] private GameObject explotion;
 
     Rigidbody2D rb2d;
     private float speed =3;
@@ -39,9 +40,14 @@ public class PlayerController : MonoBehaviour
 
     public void GetDamage(int dmg)
     {
-        SetCurrentHealth(dmg);        
+        SetCurrentHealth(dmg);
+        StartCoroutine(Hit());
         if (currentHealth <= 0)
-            Destroy(gameObject);
+        {
+            Instantiate(explotion, transform.position, Quaternion.identity);
+            Destroy(gameObject, 0.2f);
+        }
+            
     }
 
     private void Shoot()
@@ -49,5 +55,13 @@ public class PlayerController : MonoBehaviour
         delay = 0;
         for (int i = 0; i < cannons.Length; i++)
             Instantiate(projectile, cannons[i].transform.position,Quaternion.Euler(0f,0f,90f));
+    }
+
+
+    IEnumerator Hit()
+    {
+        GetComponent<SpriteRenderer>().color = new Color(1, 0, 0);
+        yield return new WaitForSeconds(0.2f);
+        GetComponent<SpriteRenderer>().color = new Color(1, 1, 1);
     }
 }
