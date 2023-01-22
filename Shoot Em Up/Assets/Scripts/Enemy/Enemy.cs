@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject explotion;
 
+
     [SerializeField] private float xSpeed = 3;
     [SerializeField] private float ySpeed;
     public int score;
@@ -21,6 +22,7 @@ public class Enemy : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         scoreControl = GameObject.FindGameObjectWithTag("GameController").GetComponent<ScoreControl>();
+        
     }
     // Start is called before the first frame update
     void Start()
@@ -58,6 +60,7 @@ public class Enemy : MonoBehaviour
     }
     private void Die()
     {
+        
         Instantiate(explotion, transform.position, Quaternion.identity);
         scoreControl.SetPlayerScore(score);
         Destroy(gameObject);

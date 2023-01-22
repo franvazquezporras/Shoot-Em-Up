@@ -5,8 +5,7 @@ using UnityEngine;
 public class KillZone : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("hey");
+    {        
         Destroy(collision.gameObject);
     }
 }

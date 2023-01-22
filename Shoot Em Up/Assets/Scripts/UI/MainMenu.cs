@@ -221,7 +221,7 @@ public class MainMenu : MonoBehaviour
     /*********************************************************************************************************************************/
     private IEnumerator Show(GameObject showImage)
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSecondsRealtime(1);
         showImage.gameObject.SetActive(true);
     }
     /*********************************************************************************************************************************/
@@ -353,8 +353,9 @@ public class MainMenu : MonoBehaviour
     /*********************************************************************************************************************************/
     public void Pause(GameObject showImage)
     {
-        Time.timeScale = 0;
-        ShowPanel(showImage);
+        Time.timeScale = 0; 
+        ShowPanel(showImage);        
+       
     }
 
     /*********************************************************************************************************************************/

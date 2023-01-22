@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject projectile;
     [SerializeField] private GameObject explotion;
 
+    private AudioSource audioSource;    
+
     Rigidbody2D rb2d;
     private float speed =3;
 
@@ -24,6 +26,7 @@ public class PlayerController : MonoBehaviour
     {
         currentHealth = maxHealth;
         rb2d = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
    
@@ -55,6 +58,7 @@ public class PlayerController : MonoBehaviour
         delay = 0;
         for (int i = 0; i < cannons.Length; i++)
             Instantiate(projectile, cannons[i].transform.position,Quaternion.Euler(0f,0f,90f));
+        audioSource.Play();
     }
 
 
