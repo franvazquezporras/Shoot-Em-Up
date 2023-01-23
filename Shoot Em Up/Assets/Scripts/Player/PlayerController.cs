@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
         rb2d.AddForce(new Vector2(Input.GetAxis("Horizontal") * speed, 0));
         rb2d.AddForce(new Vector2(0,Input.GetAxis("Vertical") * speed));
 
-        if (Input.GetKey(KeyCode.Space) && delay>50)
+        if (Input.GetKey(KeyCode.Space) && delay>50 && Time.timeScale !=0)
             Shoot();
         delay++;
     }

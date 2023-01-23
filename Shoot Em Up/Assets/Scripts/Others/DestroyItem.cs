@@ -5,10 +5,10 @@ using UnityEngine;
 public class DestroyItem : MonoBehaviour
 {
     [SerializeField] private float time;
-    private AudioSource audioSource;    
+    [SerializeField] private AudioSource audioSource;    
     private void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
     }
     private void Start()
     {

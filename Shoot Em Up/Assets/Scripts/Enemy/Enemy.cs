@@ -17,12 +17,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float fireRate;
     [SerializeField] private float health;
 
+    private AudioSource audioSource;
     private ScoreControl scoreControl;
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         scoreControl = GameObject.FindGameObjectWithTag("GameController").GetComponent<ScoreControl>();
-        
+        audioSource = GetComponent<AudioSource>();
     }
     // Start is called before the first frame update
     void Start()
@@ -69,5 +70,6 @@ public class Enemy : MonoBehaviour
     {
         GameObject temp = (GameObject)Instantiate(bullet, transform.position, Quaternion.Euler(0f, 0f, 90f));
         temp.GetComponent<Projectile>().SetDirection();
+        audioSource.Play();
     }
 }

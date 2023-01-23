@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using UnityEngine.EventSystems;
 public class MainMenu : MonoBehaviour
 {
 
@@ -391,6 +392,7 @@ public class MainMenu : MonoBehaviour
                 SetSoundVolume(-0.001f);
         }
 
+        EventSystem.current.SetSelectedGameObject(null);
     }
     /*********************************************************************************************************************************/
     /*Funcion: Resume                                                                                                                */
