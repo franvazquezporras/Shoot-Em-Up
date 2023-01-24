@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 3103582225767365881}
   - component: {fileID: 3103582225767365862}
   - component: {fileID: 3103582225767365863}
-  - component: {fileID: 269270493}
   m_Layer: 3
   m_Name: LimitsZone
   m_TagString: Untagged
@@ -139,21 +138,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 10}
   m_EdgeRadius: 0
---- !u!114 &269270493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3103582225767365860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a6048393b792b64690402560ae107d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rate: 2
-  enemies:
-  - {fileID: 6730135792224810194, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
-  - {fileID: 3283682695373226694, guid: f7ceeab6bf139ed4eafba265f7172846, type: 3}
-  - {fileID: 6563062610930202395, guid: fb76351f5f624cf429dae1833f53f9ef, type: 3}
-  waves: 3

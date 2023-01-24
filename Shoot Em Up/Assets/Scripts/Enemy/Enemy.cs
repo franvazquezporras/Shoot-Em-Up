@@ -23,7 +23,8 @@ public class Enemy : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         scoreControl = GameObject.FindGameObjectWithTag("GameController").GetComponent<ScoreControl>();
-        audioSource = GetComponent<AudioSource>();
+        if(canShoot)
+            audioSource = GetComponent<AudioSource>();
     }
     // Start is called before the first frame update
     void Start()

@@ -8,12 +8,11 @@ public class Projectile : MonoBehaviour
     private Rigidbody2D rb2d;
 
     private void Awake()
-    {
-        
+    {        
         rb2d = GetComponent<Rigidbody2D>();
     }
     
-    public void SetDirection(){ direction *= -1;}
+    public void SetDirection(){direction *= -1;}
 
     private void Update()
     {

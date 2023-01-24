@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     private AudioSource audioSource;    
 
     Rigidbody2D rb2d;
-    private float speed =3;
+    [SerializeField] private float speed;
 
     public void SetCurrentHealth(int health) { currentHealth += health; }
     public void SetMaxHealth(int health) { maxHealth = health; } 
