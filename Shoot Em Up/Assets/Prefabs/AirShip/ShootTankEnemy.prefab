@@ -31,7 +31,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 7.9051843, y: -0.9502921, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
-  m_Children: []
+  m_Children:
+  - {fileID: 3850143996860039326}
+  - {fileID: 7306521854019121699}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
@@ -124,7 +126,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 0.52, y: 0.46}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -132,18 +134,19 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.04380387, y: 0.030478798}
-      - {x: -0.0005368423, y: 0.11919235}
-      - {x: -0.02009305, y: 0.11809392}
-      - {x: -0.0683801, y: 0.030848823}
-      - {x: -0.12017218, y: 0.030358903}
-      - {x: -0.1897698, y: -0.024424776}
-      - {x: -0.18923509, y: -0.07408605}
-      - {x: -0.07614289, y: -0.10254143}
-      - {x: 0.05365011, y: -0.102213226}
-      - {x: 0.16744068, y: -0.0769672}
-      - {x: 0.1683631, y: -0.025193155}
-      - {x: 0.0956032, y: 0.03198287}
+    - - {x: 0.20586395, y: 0.07713252}
+      - {x: 0.10682724, y: 0.07876949}
+      - {x: -0.00053682737, y: 0.24196528}
+      - {x: -0.040555194, y: 0.24086662}
+      - {x: -0.1453177, y: 0.066862196}
+      - {x: -0.24458197, y: 0.06555379}
+      - {x: -0.3641072, y: -0.0530717}
+      - {x: -0.35948002, y: -0.14283879}
+      - {x: -0.15062505, y: -0.1991224}
+      - {x: -0.020832047, y: -0.1750582}
+      - {x: 0.09950639, y: -0.20055862}
+      - {x: 0.33697104, y: -0.13896272}
+      - {x: 0.33050847, y: -0.05641347}
 --- !u!114 &3283682695373226695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +167,9 @@ MonoBehaviour:
   canShoot: 1
   fireRate: 3
   health: 2
+  cannons:
+  - {fileID: 7531792755636205512}
+  - {fileID: 4023270570066615954}
 --- !u!82 &3520965568603821928
 AudioSource:
   m_ObjectHideFlags: 0
@@ -260,3 +266,63 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &4023270570066615954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7306521854019121699}
+  m_Layer: 7
+  m_Name: Cannon (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7306521854019121699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4023270570066615954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.197, y: 0.074, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3283682695373226691}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7531792755636205512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3850143996860039326}
+  m_Layer: 7
+  m_Name: Cannon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3850143996860039326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7531792755636205512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.144, y: 0.074, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3283682695373226691}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

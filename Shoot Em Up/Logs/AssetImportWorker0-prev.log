@@ -15,11 +15,11 @@ D:/Curso/GitHubRepositories/Shoot-Em-Up/Shoot Em Up
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62677
+61380
 Successfully changed project path to: D:/Curso/GitHubRepositories/Shoot-Em-Up/Shoot Em Up
 D:/Curso/GitHubRepositories/Shoot-Em-Up/Shoot Em Up
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 78.23 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 73.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.41f1 (7c19dc9acfda)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Resources/UnitySubsystems
@@ -35,89 +35,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.41f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.41f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.41f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.41f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004822 seconds.
+Registered in 0.005882 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 73.83 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 66.76 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.808 seconds
+- Completed reload, in  0.731 seconds
 Domain Reload Profiling:
-	ReloadAssembly (809ms)
-		BeginReloadAssembly (114ms)
+	ReloadAssembly (732ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (591ms)
-			LoadAssemblies (110ms)
+		EndReloadAssembly (532ms)
+			LoadAssemblies (99ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (192ms)
+			SetupTypeCache (170ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (234ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (209ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (74ms)
-				BeforeProcessingInitializeOnLoad (18ms)
-				ProcessInitializeOnLoadAttributes (98ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (67ms)
+				BeforeProcessingInitializeOnLoad (17ms)
+				ProcessInitializeOnLoadAttributes (88ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010568 seconds.
+Registered in 0.008692 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 69.32 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Refreshing native plugins compatible for Editor in 90.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.01 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  6.707 seconds
+- Completed reload, in 12.046 seconds
 Domain Reload Profiling:
-	ReloadAssembly (6709ms)
-		BeginReloadAssembly (229ms)
+	ReloadAssembly (12049ms)
+		BeginReloadAssembly (260ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
-			ReleaseScriptingObjects (1ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (6392ms)
-			LoadAssemblies (204ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (11694ms)
+			LoadAssemblies (217ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (443ms)
+			SetupTypeCache (562ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (5593ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (10702ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (69ms)
-				BeforeProcessingInitializeOnLoad (123ms)
-				ProcessInitializeOnLoadAttributes (5345ms)
-				ProcessInitializeOnLoadMethodAttributes (33ms)
+				RefreshPlugins (92ms)
+				BeforeProcessingInitializeOnLoad (150ms)
+				ProcessInitializeOnLoadAttributes (10407ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (17ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3150 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 128.4 MB.
+System memory in use before: 128.3 MB.
 System memory in use after: 128.4 MB.
 
 Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 3587.
-Total: 3.948100 ms (FindLiveObjects: 0.297100 ms CreateObjectMapping: 0.130900 ms MarkObjects: 3.271600 ms  DeleteObjects: 0.247500 ms)
+Total: 4.292600 ms (FindLiveObjects: 0.267100 ms CreateObjectMapping: 0.128900 ms MarkObjects: 3.671300 ms  DeleteObjects: 0.214100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -132,659 +132,403 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+  path: Assets/Prefabs/AirShip/RunShooterEnemy 1.prefab
+  artifactKey: Guid(0c94513318419824a8e8408b6500f77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/RunShooterEnemy 1.prefab using Guid(0c94513318419824a8e8408b6500f77a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3703b05da42f1c23be1e0deefcc7fecb') in 0.778765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000984 seconds.
+  path: Assets/Prefabs/AirShip/Speed Enemy.prefab
+  artifactKey: Guid(0a97c156a71d0c342a1951c28eaef506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/Speed Enemy.prefab using Guid(0a97c156a71d0c342a1951c28eaef506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e51174a9216185d5a6003a1a3b316a88') in 0.170384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000833 seconds.
   path: Assets/Prefabs/AirShip/Tank Enemy.prefab
   artifactKey: Guid(fb76351f5f624cf429dae1833f53f9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Tank Enemy.prefab using Guid(fb76351f5f624cf429dae1833f53f9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7762bb52c1c2059495997efbda02205') in 0.282479 seconds 
+Start importing Assets/Prefabs/AirShip/Tank Enemy.prefab using Guid(fb76351f5f624cf429dae1833f53f9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75a841e7e58727727b732021f5d0d4c4') in 0.189252 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000407 seconds.
-  path: Assets/Prefabs/AirShip/ShootEnemy.prefab
-  artifactKey: Guid(f7ceeab6bf139ed4eafba265f7172846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/ShootEnemy.prefab using Guid(f7ceeab6bf139ed4eafba265f7172846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '812581af779e1946c1c1458b7302e953') in 0.122729 seconds 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 10.34 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 69.4 MB.
-System memory in use after: 69.5 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 3595.
-Total: 4.793500 ms (FindLiveObjects: 0.328400 ms CreateObjectMapping: 0.189400 ms MarkObjects: 4.084900 ms  DeleteObjects: 0.189400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 16.871905 seconds.
-  path: Assets/Prefabs/AirShip/Tank Enemy.prefab
-  artifactKey: Guid(fb76351f5f624cf429dae1833f53f9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Tank Enemy.prefab using Guid(fb76351f5f624cf429dae1833f53f9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348a0399b8abcd69944cd8e31e100ad5') in 0.068113 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.156146 seconds.
-  path: Assets/Prefabs/AirShip/ShootEnemy.prefab
-  artifactKey: Guid(f7ceeab6bf139ed4eafba265f7172846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/ShootEnemy.prefab using Guid(f7ceeab6bf139ed4eafba265f7172846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '729d2382795cbc768bb48fae6ea8cea6') in 0.076432 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.775577 seconds.
+  Time since last request: 0.000853 seconds.
   path: Assets/Prefabs/AirShip/Basic Enemy.prefab
   artifactKey: Guid(ae65d9f2fa059b44bb3e6e472668e324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Basic Enemy.prefab using Guid(ae65d9f2fa059b44bb3e6e472668e324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a332847705fa693750b7d959e98abcc') in 0.073216 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009716 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.932 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1933ms)
-		BeginReloadAssembly (291ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (81ms)
-		EndReloadAssembly (1543ms)
-			LoadAssemblies (354ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (470ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (98ms)
-			SetupLoadedEditorAssemblies (533ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (133ms)
-				ProcessInitializeOnLoadAttributes (254ms)
-				ProcessInitializeOnLoadMethodAttributes (122ms)
-				AfterProcessingInitializeOnLoad (17ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (28ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3121 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 130.9 MB.
-System memory in use after: 130.9 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3598.
-Total: 11.505300 ms (FindLiveObjects: 0.372100 ms CreateObjectMapping: 0.172200 ms MarkObjects: 10.628400 ms  DeleteObjects: 0.330800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Start importing Assets/Prefabs/AirShip/Basic Enemy.prefab using Guid(ae65d9f2fa059b44bb3e6e472668e324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '194e727f838d06ef2688a06d9d32409a') in 0.136266 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 308.373922 seconds.
+  Time since last request: 0.000989 seconds.
   path: Assets/Prefabs/AirShip/ShootEnemy.prefab
   artifactKey: Guid(f7ceeab6bf139ed4eafba265f7172846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/ShootEnemy.prefab using Guid(f7ceeab6bf139ed4eafba265f7172846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0268a685fe58ca10fce9e39c371d5fd8') in 0.141092 seconds 
+Start importing Assets/Prefabs/AirShip/ShootEnemy.prefab using Guid(f7ceeab6bf139ed4eafba265f7172846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75f65232948add636f817ab28f9fa846') in 0.089048 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000436 seconds.
-  path: Assets/Prefabs/AirShip/Player.prefab
-  artifactKey: Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player.prefab using Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ff3e3420eb4b8c59a60cad990d87ce') in 0.465364 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011850 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.709 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1709ms)
-		BeginReloadAssembly (190ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1300ms)
-			LoadAssemblies (208ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (477ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (421ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (131ms)
-				ProcessInitializeOnLoadAttributes (237ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (17ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (28ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3121 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.0 MB.
-System memory in use after: 131.0 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3602.
-Total: 7.908400 ms (FindLiveObjects: 0.369900 ms CreateObjectMapping: 0.160200 ms MarkObjects: 7.229100 ms  DeleteObjects: 0.146800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 0.001498 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd595ea0fc41a9e11f16f96fdd7a7941') in 0.154728 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 74.238817 seconds.
-  path: Assets/Prefabs/AirShip/ShootEnemy.prefab
-  artifactKey: Guid(f7ceeab6bf139ed4eafba265f7172846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/ShootEnemy.prefab using Guid(f7ceeab6bf139ed4eafba265f7172846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65dab695a1425a0df51e50707ce1b013') in 0.140147 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.016598 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.39 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.550 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2550ms)
-		BeginReloadAssembly (373ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (205ms)
-		EndReloadAssembly (2055ms)
-			LoadAssemblies (250ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (669ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (89ms)
-			SetupLoadedEditorAssemblies (835ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (163ms)
-				ProcessInitializeOnLoadAttributes (596ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
-				AfterProcessingInitializeOnLoad (23ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (60ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.86 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3121 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.0 MB.
-System memory in use after: 131.1 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3606.
-Total: 6.873500 ms (FindLiveObjects: 0.573700 ms CreateObjectMapping: 0.574400 ms MarkObjects: 5.562800 ms  DeleteObjects: 0.160800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014610 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.979 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1979ms)
-		BeginReloadAssembly (344ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (102ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (76ms)
-		EndReloadAssembly (1528ms)
-			LoadAssemblies (252ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (556ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (494ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (149ms)
-				ProcessInitializeOnLoadAttributes (287ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
-				AfterProcessingInitializeOnLoad (20ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (40ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.99 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3121 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.0 MB.
-System memory in use after: 131.1 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3609.
-Total: 4.977500 ms (FindLiveObjects: 0.742200 ms CreateObjectMapping: 0.547100 ms MarkObjects: 3.527600 ms  DeleteObjects: 0.159000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 85.750730 seconds.
+  path: Assets/Textures/Spacecraft/idle_scout_red.png
+  artifactKey: Guid(f680e5047c3880e4285d455c7e341a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Spacecraft/idle_scout_red.png using Guid(f680e5047c3880e4285d455c7e341a44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7720c11686b32e3a88429344b15cff6c') in 0.049652 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1101.657623 seconds.
-  path: Assets/Prefabs/AirShip/Player.prefab
-  artifactKey: Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player.prefab using Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '893a50871b3c94e6b39acdba57da0e75') in 0.318329 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011371 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.789 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1789ms)
-		BeginReloadAssembly (214ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (15ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (62ms)
-		EndReloadAssembly (1482ms)
-			LoadAssemblies (213ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (477ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (584ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (219ms)
-				ProcessInitializeOnLoadAttributes (304ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
-				AfterProcessingInitializeOnLoad (18ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (28ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.19 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3121 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.0 MB.
-System memory in use after: 131.1 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3613.
-Total: 5.232900 ms (FindLiveObjects: 0.326500 ms CreateObjectMapping: 0.273200 ms MarkObjects: 4.489300 ms  DeleteObjects: 0.142500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 6.132004 seconds.
+  path: Assets/Textures/Spacecraft/idle_scout_yellow.png
+  artifactKey: Guid(5500a4eb7184fed4eb5b5e505ffecd91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Spacecraft/idle_scout_yellow.png using Guid(5500a4eb7184fed4eb5b5e505ffecd91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49a5bd75ddbb34b7913aeed8ffea27b9') in 0.018100 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.594990 seconds.
-  path: Assets/Prefabs/AirShip/Player2.prefab
-  artifactKey: Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player2.prefab using Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9cd71b240a58e3f18a707bb1c00182') in 0.161360 seconds 
+  Time since last request: 11.181373 seconds.
+  path: Assets/Prefabs/AirShip
+  artifactKey: Guid(40c36bf5153b1c64ba1b4cf8d7197549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip using Guid(40c36bf5153b1c64ba1b4cf8d7197549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6495531663631983f218f4771ae656a0') in 0.006977 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 585.960440 seconds.
-  path: Assets/Prefabs/AirShip/Player2.prefab
-  artifactKey: Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player2.prefab using Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304724b46a2a7e3ba6f78060b3c5064f') in 0.190082 seconds 
+  Time since last request: 0.026101 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '031aa8ed485c522db66206466709cfdb') in 0.071629 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.391398 seconds.
-  path: Assets/Prefabs/AirShip/Player1.prefab
-  artifactKey: Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player1.prefab using Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06eb2c8f2699188192fe69ae85599d30') in 0.113170 seconds 
+  Time since last request: 15.203726 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45c575abfed39244278490e8abd8dd55') in 0.116726 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.847208 seconds.
-  path: Assets/Prefabs/AirShip/Player2.prefab
-  artifactKey: Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player2.prefab using Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b23820d5a102a6b6c4a2b4ba1d8863') in 0.109604 seconds 
+  Time since last request: 4.697731 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb4107f2ffb50ba0d5af80a71892f38') in 0.108211 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.807958 seconds.
-  path: Assets/Prefabs/AirShip/Player2.prefab
-  artifactKey: Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player2.prefab using Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe807f6bfaecba8facbb2349d7b40ef') in 0.080851 seconds 
+  Time since last request: 4.112265 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00d043305701ffd277de5173c8bb0e0d') in 0.081599 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.055492 seconds.
-  path: Assets/Prefabs/AirShip/Player2.prefab
-  artifactKey: Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player2.prefab using Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60c71463a8ebf8aaa8ae6190559be1f4') in 0.096381 seconds 
+  Time since last request: 5.168843 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0883f877525f6f607b6166bd22c13094') in 0.110978 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 130.123748 seconds.
-  path: Assets/Prefabs/AirShip/Player.prefab
-  artifactKey: Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player.prefab using Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5597ca6662207954bb40f37b4a954f7') in 0.128813 seconds 
+  Time since last request: 4.544698 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '773003f2a98c92e1e001434f5cbbbbb5') in 0.092841 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000421 seconds.
-  path: Assets/Prefabs/AirShip/Player2.prefab
-  artifactKey: Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player2.prefab using Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5961670f21a4a483736d20403a3cc323') in 0.130455 seconds 
+  Time since last request: 3.378570 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf9648f9ce484f10bf2d49a6d279902') in 0.113197 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000440 seconds.
-  path: Assets/Prefabs/AirShip/Player1.prefab
-  artifactKey: Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player1.prefab using Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56daabf3c21a18b9a0a4d1e3a99fcb10') in 0.124334 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012548 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.980 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1981ms)
-		BeginReloadAssembly (233ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (16ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (63ms)
-		EndReloadAssembly (1639ms)
-			LoadAssemblies (231ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (545ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (72ms)
-			SetupLoadedEditorAssemblies (642ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (154ms)
-				ProcessInitializeOnLoadAttributes (427ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
-				AfterProcessingInitializeOnLoad (18ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3121 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.1 MB.
-System memory in use after: 131.2 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3617.
-Total: 6.023900 ms (FindLiveObjects: 0.228500 ms CreateObjectMapping: 0.124900 ms MarkObjects: 5.329000 ms  DeleteObjects: 0.339800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 3.153947 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ff7b2d1c777bd11880a60a27479b0c5') in 0.106754 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.813052 seconds.
-  path: Assets/Prefabs/AirShip/Player.prefab
-  artifactKey: Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player.prefab using Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '972d1501c8aab95f32dd5123183b4c14') in 0.163880 seconds 
+  Time since last request: 3.717261 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b353172dc1ea35cd5dde6149d36e0c4') in 0.082781 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/Prefabs/AirShip/Player2.prefab
-  artifactKey: Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player2.prefab using Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b17777316ed5aa537a35f0a52c6b14') in 0.098383 seconds 
+  Time since last request: 4.352751 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd3cce766eebc731208dfa398462641') in 0.103904 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000322 seconds.
-  path: Assets/Prefabs/AirShip/Player1.prefab
-  artifactKey: Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player1.prefab using Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2edd8b07605e0782918d69f56c807414') in 0.091106 seconds 
+  Time since last request: 2.340304 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c0f04e75f32f2b4cb10f5219ea4b90') in 0.107853 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.109622 seconds.
-  path: Assets/Prefabs/AirShip/Player.prefab
-  artifactKey: Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player.prefab using Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39a8c86f7659b54c096d126cff2dcfe1') in 0.106498 seconds 
+  Time since last request: 2.657881 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a41841da27fc339a5ccf32b7ae533a93') in 0.102803 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000625 seconds.
-  path: Assets/Prefabs/AirShip/Player2.prefab
-  artifactKey: Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player2.prefab using Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b417f89f293f86312587e3c1a75a9a3a') in 0.174989 seconds 
+  Time since last request: 3.308284 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359e699867dc19ed3c3d2c6678075e80') in 0.107470 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000502 seconds.
-  path: Assets/Prefabs/AirShip/Player1.prefab
-  artifactKey: Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player1.prefab using Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0d50696825ba79998df0b4a9a24918') in 0.338323 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012092 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.902 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1903ms)
-		BeginReloadAssembly (201ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (1567ms)
-			LoadAssemblies (225ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (532ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (80ms)
-			SetupLoadedEditorAssemblies (579ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (142ms)
-				ProcessInitializeOnLoadAttributes (366ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
-				AfterProcessingInitializeOnLoad (18ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3121 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.1 MB.
-System memory in use after: 131.2 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3621.
-Total: 7.817600 ms (FindLiveObjects: 0.462000 ms CreateObjectMapping: 0.340500 ms MarkObjects: 6.814100 ms  DeleteObjects: 0.198600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 6.933822 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy.prefab
+  artifactKey: Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy.prefab using Guid(ab356c86ab389444c80a0cc6a772fca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '910eaf524b1d2f3d675bb19c27899909') in 0.111549 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 63.274594 seconds.
-  path: Assets/Prefabs/AirShip/Player.prefab
-  artifactKey: Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player.prefab using Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ca9f91ccf712530cf947f1f1b7aad5') in 0.166487 seconds 
+  Time since last request: 10.669080 seconds.
+  path: Assets/Prefabs/AirShip/ShootTankEnemy 1.prefab
+  artifactKey: Guid(7e051a9ab80c77241b937b2cf37badfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootTankEnemy 1.prefab using Guid(7e051a9ab80c77241b937b2cf37badfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5016a4a13fce1266b5ca66088d66c31') in 0.109520 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.869316 seconds.
-  path: Assets/Prefabs/AirShip/Player.prefab
-  artifactKey: Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player.prefab using Guid(d6c45342f1cc1fa47b2e3d0f443c47cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4c32cc03a7ba89f3d75d7ade835569e') in 0.092282 seconds 
+  Time since last request: 29.243939 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemyTank.prefab
+  artifactKey: Guid(7e051a9ab80c77241b937b2cf37badfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemyTank.prefab using Guid(7e051a9ab80c77241b937b2cf37badfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a783eb15112841aa2af1c03fa5383f12') in 0.103372 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.019230 seconds.
-  path: Assets/Prefabs/AirShip/Player1.prefab
-  artifactKey: Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player1.prefab using Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bebc56bfd1cf49e83b8059c6ee311c01') in 0.079511 seconds 
+  Time since last request: 9.532358 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemyTank.prefab
+  artifactKey: Guid(7e051a9ab80c77241b937b2cf37badfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemyTank.prefab using Guid(7e051a9ab80c77241b937b2cf37badfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5487de2789a0c17d71b8cdd9cd2424b') in 0.096998 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.798757 seconds.
-  path: Assets/Prefabs/AirShip/Player2.prefab
-  artifactKey: Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player2.prefab using Guid(7b14a48fd4d73d246964e86721cb1bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4367b03bf7cc770b7ef77bac84ddcfd') in 0.073835 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012620 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.961 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1962ms)
-		BeginReloadAssembly (192ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (49ms)
-		EndReloadAssembly (1578ms)
-			LoadAssemblies (223ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (634ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (70ms)
-			SetupLoadedEditorAssemblies (508ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (130ms)
-				ProcessInitializeOnLoadAttributes (321ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
-				AfterProcessingInitializeOnLoad (18ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3121 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 131.2 MB.
-System memory in use after: 131.2 MB.
-
-Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 3625.
-Total: 4.643300 ms (FindLiveObjects: 0.303600 ms CreateObjectMapping: 0.143300 ms MarkObjects: 4.038800 ms  DeleteObjects: 0.156400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  Time since last request: 22.507846 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemyTank.prefab
+  artifactKey: Guid(7e051a9ab80c77241b937b2cf37badfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemyTank.prefab using Guid(7e051a9ab80c77241b937b2cf37badfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a340f80e804e155060ee2eebe1287452') in 0.121577 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 85.388874 seconds.
-  path: Assets/Prefabs/AirShip/Player1.prefab
-  artifactKey: Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player1.prefab using Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '079012c47a8bcb17d90befe29d327777') in 0.178539 seconds 
+  Time since last request: 175.890669 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemyTank.prefab
+  artifactKey: Guid(7e051a9ab80c77241b937b2cf37badfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemyTank.prefab using Guid(7e051a9ab80c77241b937b2cf37badfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8338dc00761cb83d1bb071c4d4fb4ad6') in 0.161472 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 145.117633 seconds.
-  path: Assets/Prefabs/AirShip/Player1.prefab
-  artifactKey: Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/AirShip/Player1.prefab using Guid(9b3a837291ce4f3498e57d73a46abdc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4046d35cf92c808cf4cf114ebfa32310') in 0.090416 seconds 
+  Time since last request: 15.419703 seconds.
+  path: Assets/Prefabs/AirShip/ShootEnemy 1.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/ShootEnemy 1.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5bdf985070bbeeed513bec0151ce65e') in 0.129091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.140642 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be6fbe8269859a263d662f64a301251a') in 0.096222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.235155 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d75ac33314d879370097b01eb784b6') in 0.097308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.060003 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc955562af61773dbf1293c5d44e92f') in 0.090163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.373135 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35a70ad59ab626eaadf727285bdc032b') in 0.082018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.729334 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21cbbcbff1a0d76833fb49807f3053d3') in 0.091434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.131868 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1203a5eee56c4e06c95943ee32d10a4') in 0.090676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.949116 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b1caa25377c5473a92eb5affe2bb6f') in 0.094361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.091764 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemyTank.prefab
+  artifactKey: Guid(7e051a9ab80c77241b937b2cf37badfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemyTank.prefab using Guid(7e051a9ab80c77241b937b2cf37badfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ff42391357b0dd92b6023774c7477e2') in 0.089149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.983703 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f69842d912620498553b14f697c02d6e') in 0.083151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.456074 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c482e6e8681d3a4adacc350d31bd4c7') in 0.078696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.397969 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d50ee8ad3aec2135b74720373d5b168') in 0.166045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.840833 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921570839b9c6f1c7f4c52ed70ac80fc') in 0.103635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.682025 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3290ed8fc9589c3d14350bc425664a4') in 0.100002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.139344 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '414f9fd29a32d275db97ac0de9fedb56') in 0.087890 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.517842 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e128fa9768e9026e42a2fd17b00ec7c0') in 0.095332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.351284 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '151587b30c1c8aa2ce08407cd89df27e') in 0.093938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.539856 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0bc034cd40ea6d3191fc0151ef4fdf') in 0.090301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.754443 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e9d6e5ee07e3ff1bed7b9bd4c8e037') in 0.105822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.241034 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a8cb994185fa19fbaaef4919faff39') in 0.089246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 183.760764 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20de9d295bd66629b9233a4be16ad67f') in 0.176809 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.733350 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy 1.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy 1.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352b7aa8d17cf9ec3e77ffaa6100f233') in 0.093470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.851796 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy 1.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy 1.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f25a81062c61bbc2798000daeed9ca0') in 0.078702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.529390 seconds.
+  path: Assets/Prefabs/AirShip/GoldFastEnemy.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldFastEnemy.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f734bbbac774083741fb1e8b8c0fdf4') in 0.087959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.423794 seconds.
+  path: Assets/Prefabs/AirShip/GoldFastEnemy.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldFastEnemy.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ce88dcaa97be886ae68a8e085cd0ff') in 0.136109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.236702 seconds.
+  path: Assets/Prefabs/AirShip/GoldFastEnemy.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldFastEnemy.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a379301b09c34cd3b0882598024b6695') in 0.108891 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.552987 seconds.
+  path: Assets/Prefabs/AirShip/GoldFastEnemy.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldFastEnemy.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '479336eb3687366129eb7378d9726a28') in 0.096559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.659150 seconds.
+  path: Assets/Prefabs/AirShip/GoldFastEnemy.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldFastEnemy.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58f5b5c9451222e5d88dace4cc356fc5') in 0.099193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.295429 seconds.
+  path: Assets/Prefabs/AirShip/GoldFastEnemy.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldFastEnemy.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83b4e0f1eac5251375273a2d66bc166a') in 0.098035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.701896 seconds.
+  path: Assets/Prefabs/AirShip/GoldFastEnemy.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldFastEnemy.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b43d42d8b74410f404e9cebe93612212') in 0.100860 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.746826 seconds.
+  path: Assets/Prefabs/AirShip/GoldFastEnemy.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldFastEnemy.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca3bd930d2824e423b15f68ce0649b9b') in 0.108734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.262778 seconds.
+  path: Assets/Prefabs/AirShip/GoldFastEnemy.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldFastEnemy.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33cd601b1961a2720253f1330ec349f6') in 0.099936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.187915 seconds.
+  path: Assets/Prefabs/AirShip/GoldFastEnemy.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldFastEnemy.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff307953be2bad1a195df0b59197a920') in 0.092008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.121139 seconds.
+  path: Assets/Prefabs/AirShip/GoldFastEnemy.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldFastEnemy.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3fe48f096ab4307903b2d65640af832') in 0.089167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.302434 seconds.
+  path: Assets/Prefabs/AirShip/GoldFastEnemy.prefab
+  artifactKey: Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldFastEnemy.prefab using Guid(daf91789c76f2da4eb9cd42741c80505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbe3001e832310c857ceedd55aaa01b0') in 0.092417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.635494 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0639254a8fb5990331b88eafc8b36575') in 0.073392 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.426800 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b77c0296dc5ae06f36bde8e90e2db9ca') in 0.105167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.052370 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8264fd4d0f895e0ffa8744a305b5af2') in 0.092289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.744508 seconds.
+  path: Assets/Prefabs/AirShip/GoldEnemy.prefab
+  artifactKey: Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/AirShip/GoldEnemy.prefab using Guid(a5ef1b7301eb88e4299879b24aff377b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '194bab2444ee9a5dbcdc27d4603efb65') in 0.097652 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

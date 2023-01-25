@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private bool canShoot;
     [SerializeField] private float fireRate;
     [SerializeField] private float health;
+    [SerializeField] private GameObject[] cannons;
 
     private AudioSource audioSource;
     private ScoreControl scoreControl;
@@ -69,8 +70,11 @@ public class Enemy : MonoBehaviour
     }
     private void Shoot()
     {
-        GameObject temp = (GameObject)Instantiate(bullet, transform.position, Quaternion.Euler(0f, 0f, 90f));
-        temp.GetComponent<Projectile>().SetDirection();
+        for (int i = 0; i < cannons.Length; i++)
+        {
+            GameObject temp = (GameObject)Instantiate(bullet, cannons[i].transform.position, Quaternion.Euler(0f, 0f, 90f));
+            temp.GetComponent<Projectile>().SetDirection();
+        }
         audioSource.Play();
     }
 }
