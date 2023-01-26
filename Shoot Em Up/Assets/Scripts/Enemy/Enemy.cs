@@ -75,6 +75,14 @@ public class Enemy : MonoBehaviour
             GameObject temp = (GameObject)Instantiate(bullet, cannons[i].transform.position, Quaternion.Euler(0f, 0f, 90f));
             temp.GetComponent<Projectile>().SetDirection();
         }
+        
+        if(gameObject.name == "Boss1" || gameObject.name == "Boss2")
+        {
+            if (transform.position.y >= 0)
+                ySpeed = Random.Range(-1, -0.1f);
+            else
+                ySpeed = Random.Range(0.1f, 1);            
+        }
         audioSource.Play();
     }
 }
