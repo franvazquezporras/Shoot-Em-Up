@@ -13,10 +13,9 @@ public class SkyBox : MonoBehaviour
     float exposureBackground =1;
     float fadeTiming = 1f;
     bool active;
+    private int levelGoal = 1000;
 
-    // creado el proceso de cambio de imagen , falta crear el motivo de cambio (actualmente falseado los datos) que sera el numero de puntos obtenidos por el jugador
-    // limpiar y poner variables en privado y serializables
-    // controlar todos los fondos disponibles y seleccionar el siguiente
+ 
     private void Awake()
     {
         RenderSettings.skybox.mainTexture = backgroundList[0];
@@ -24,8 +23,12 @@ public class SkyBox : MonoBehaviour
     void Update()
     {
         RenderSettings.skybox.SetFloat("_Rotation", Time.time * rotateSpeed);       
-        if (scorePlayer.GetPlayerScore()!=0 && scorePlayer.GetPlayerScore()%1000 == 0 && !active)
+        if (scorePlayer.GetPlayerScore()!=0 && scorePlayer.GetPlayerScore()%levelGoal == 0 && !active)
+        {
             StartCoroutine(ExposureDown());
+            levelGoal += 1000;
+        }
+            
         
     }
 
