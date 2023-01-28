@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -15,8 +16,12 @@ public class Enemy : MonoBehaviour
     
     [SerializeField] private bool canShoot;
     [SerializeField] private float fireRate;
-    [SerializeField] private float health;
+    [SerializeField] private float health;    
     [SerializeField] private GameObject[] cannons;
+
+    [SerializeField] private bool isBoss;
+    private bool bossDirection;
+    [SerializeField] private Slider bossBar;
 
     private AudioSource audioSource;
     private ScoreControl scoreControl;
@@ -26,8 +31,10 @@ public class Enemy : MonoBehaviour
         scoreControl = GameObject.FindGameObjectWithTag("GameController").GetComponent<ScoreControl>();
         if(canShoot)
             audioSource = GetComponent<AudioSource>();
+        if (isBoss)
+            bossBar.maxValue = health;
     }
-    // Start is called before the first frame update
+    
     void Start()
     {
      
@@ -41,7 +48,23 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb2d.velocity = new Vector2(xSpeed*-1, ySpeed);
+
+        if (isBoss)
+        {
+            if (transform.position.x < 0)
+                bossDirection = false;
+            else if (transform.position.x >= 8)
+                bossDirection = true;
+
+            if(bossDirection == false)
+                rb2d.velocity = new Vector2(xSpeed * 1, ySpeed);
+            else
+                rb2d.velocity = new Vector2(xSpeed * -1, ySpeed);
+
+            bossBar.value = health;
+        }            
+        else
+            rb2d.velocity = new Vector2(xSpeed * -1, ySpeed);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -76,7 +99,7 @@ public class Enemy : MonoBehaviour
             temp.GetComponent<Projectile>().SetDirection();
         }
         
-        if(gameObject.name == "Boss1" || gameObject.name == "Boss2")
+        if(isBoss)
         {
             if (transform.position.y >= 0)
                 ySpeed = Random.Range(-1, -0.1f);

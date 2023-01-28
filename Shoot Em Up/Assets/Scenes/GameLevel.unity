@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0032991746, g: 0.0032991746, b: 0.0032991746, a: 1}
+  m_IndirectSpecularColor: {r: 0.004723227, g: 0.004723227, b: 0.004723227, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -592,7 +592,9 @@ MonoBehaviour:
   - {fileID: 3283682695373226694, guid: a5ef1b7301eb88e4299879b24aff377b, type: 3}
   - {fileID: 3283682695373226694, guid: daf91789c76f2da4eb9cd42741c80505, type: 3}
   - {fileID: 3283682695373226694, guid: 7e051a9ab80c77241b937b2cf37badfc, type: 3}
+  bosses:
   - {fileID: 3283682695373226694, guid: b467a95c24fefd54e965c00edad65397, type: 3}
+  - {fileID: 3283682695373226694, guid: 3cfdb186fa47ade4a9e844678e009f83, type: 3}
   waves: 2
   score: {fileID: 541292331}
 --- !u!1 &342058297
