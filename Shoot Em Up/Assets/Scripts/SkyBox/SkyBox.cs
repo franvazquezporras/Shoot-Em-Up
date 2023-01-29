@@ -23,10 +23,10 @@ public class SkyBox : MonoBehaviour
     void Update()
     {
         RenderSettings.skybox.SetFloat("_Rotation", Time.time * rotateSpeed);       
-        if (scorePlayer.GetPlayerScore()!=0 && scorePlayer.GetPlayerScore()%levelGoal == 0 && !active)
+        if ( scorePlayer.GetPlayerScore()>=levelGoal && !active)
         {
-            StartCoroutine(ExposureDown());
             levelGoal += 1000;
+            StartCoroutine(ExposureDown());            
         }
             
         
