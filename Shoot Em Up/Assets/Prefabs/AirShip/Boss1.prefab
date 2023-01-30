@@ -279,7 +279,7 @@ MonoBehaviour:
   ySpeed: 0
   score: 250
   canShoot: 1
-  fireRate: 4
+  fireRate: 1
   health: 200
   cannons:
   - {fileID: 2644131799470058481}

@@ -22,6 +22,9 @@ public class HealthBar : MonoBehaviour
         //Codigo para testear
         if (Input.GetKeyDown(KeyCode.P) && player.GetCurrentHealth()>0)
             player.SetCurrentHealth(-1);
+
+        if(player== null)
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     private void InitHealthBar()

@@ -22,6 +22,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private bool isBoss;
     private bool bossDirection;
     [SerializeField] private Slider bossBar;
+    private int delay;
 
     private AudioSource audioSource;
     private ScoreControl scoreControl;
@@ -65,6 +66,8 @@ public class Enemy : MonoBehaviour
         }            
         else
             rb2d.velocity = new Vector2(xSpeed * -1, ySpeed);
+
+        delay++;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -98,13 +101,17 @@ public class Enemy : MonoBehaviour
             GameObject temp = (GameObject)Instantiate(bullet, cannons[i].transform.position, Quaternion.Euler(0f, 0f, 90f));
             temp.GetComponent<Projectile>().SetDirection();
         }
-        
-        if(isBoss)
+
+        if (isBoss)
         {
-            if (transform.position.y >= 0)
-                ySpeed = Random.Range(-1, -0.1f);
-            else
-                ySpeed = Random.Range(0.1f, 1);            
+            if (delay > 100)
+            {
+                if (transform.position.y >= 0)
+                    ySpeed = Random.Range(-1, -0.1f);
+                else
+                    ySpeed = Random.Range(0.1f, 1);
+                delay = 0;
+            }   
         }
         audioSource.Play();
     }

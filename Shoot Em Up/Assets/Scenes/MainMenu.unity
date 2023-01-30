@@ -1829,6 +1829,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1368877769}
+    - target: {fileID: 596937114472132921, guid: 444df26c070f7404f8a8aca669318fa7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: GameLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 596937115173612793, guid: 444df26c070f7404f8a8aca669318fa7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 

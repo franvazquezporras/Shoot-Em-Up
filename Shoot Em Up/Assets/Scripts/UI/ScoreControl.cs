@@ -8,6 +8,7 @@ public class ScoreControl : MonoBehaviour
     private int playerScore = 0;
     [SerializeField] private Text scoreText;
     
+    
     private void Awake()
     {        
         UpdateText();        
@@ -15,7 +16,7 @@ public class ScoreControl : MonoBehaviour
 
     private void Update()
     {
-        UpdateText();
+        UpdateText();                
     }
     public void SetPlayerScore(int score){playerScore += score;
         UpdateText();
