@@ -7,7 +7,7 @@ public class ScoreControl : MonoBehaviour
 {
     private int playerScore = 0;
     [SerializeField] private Text scoreText;
-    
+    public bool playerDeath;
     
     private void Awake()
     {        
@@ -16,13 +16,31 @@ public class ScoreControl : MonoBehaviour
 
     private void Update()
     {
-        UpdateText();                
+        if (playerDeath)
+            SaveScore();
+        else
+            UpdateText();                
     }
     public void SetPlayerScore(int score){playerScore += score;
         UpdateText();
     }
     public int GetPlayerScore(){return playerScore;}
 
+
+    public void SaveScore()
+    {
+        Debug.Log(playerScore);
+        int aux;
+        for (int i = 0; i <= 10; i++)
+        {
+            if (playerScore > PlayerPrefs.GetInt("Puntuacion" + i))
+            {
+                aux = PlayerPrefs.GetInt("Puntuacion" + i);
+                PlayerPrefs.SetInt("Puntuacion" + i, playerScore);
+                playerScore = aux;
+            }
+        }
+    }
     private void UpdateText()
     {
         scoreText.text = playerScore.ToString();

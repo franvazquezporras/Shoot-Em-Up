@@ -28,13 +28,13 @@ public class AirshipUpgrading : MonoBehaviour
 
     private void ControlUpgrade()
     {
-        if (scoreLevel.GetPlayerScore() > 2000 && shipActive<2)
+        if (scoreLevel.GetPlayerScore() > 10000 && shipActive<2)
         {
             Destroy(player);
             player = Instantiate(playerLevel[2], player.transform.position, Quaternion.Euler(0, 0, -90f));
             shipActive++;
         }            
-        else if (scoreLevel.GetPlayerScore() > 1000 && shipActive<1)
+        else if (scoreLevel.GetPlayerScore() > 5000 && shipActive<1)
         {
             Destroy(player);
             player = Instantiate(playerLevel[1], player.transform.position, Quaternion.Euler(0, 0, -90f));

@@ -7,7 +7,7 @@ public class HealthBar : MonoBehaviour
     PlayerController player;
     [SerializeField] private Text healthText;
     [SerializeField] private Slider lifeBar;
-
+    [SerializeField] private ScoreControl score;    
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
@@ -18,13 +18,14 @@ public class HealthBar : MonoBehaviour
 
     private void Update()
     {
-        InitHealthBar();
-        //Codigo para testear
-        if (Input.GetKeyDown(KeyCode.P) && player.GetCurrentHealth()>0)
-            player.SetCurrentHealth(-1);
-
-        if(player== null)
+        if (player.GetCurrentHealth() <= 0)
+            score.playerDeath = true;        
+        if(player== null && !score.playerDeath)
             player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        else
+            InitHealthBar();
+
+        
     }
 
     private void InitHealthBar()

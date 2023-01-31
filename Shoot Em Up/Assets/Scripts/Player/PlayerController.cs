@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject [] cannons;
     [SerializeField] private GameObject projectile;
     [SerializeField] private GameObject explotion;
+    
 
     private AudioSource audioSource;    
 
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
         currentHealth = maxHealth;
         rb2d = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
+        
     }
 
    
@@ -49,8 +51,7 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(explotion, transform.position, Quaternion.identity);
             Destroy(gameObject, 0.2f);
-        }
-            
+        }            
     }
 
     private void Shoot()

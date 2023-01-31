@@ -8,7 +8,7 @@ public class DestroyItem : MonoBehaviour
     [SerializeField] private AudioSource audioSource;    
     private void Awake()
     {
-        //audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
     }
     private void Start()
     {
