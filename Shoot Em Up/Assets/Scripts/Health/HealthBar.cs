@@ -30,9 +30,11 @@ public class HealthBar : MonoBehaviour
 
     private void InitHealthBar()
     {
-        healthText.text = player.GetCurrentHealth() + "/" + player.GetMaxHealth();
+        if (player.GetCurrentHealth() <= 0)
+            healthText.text = 0 + "/" + player.GetMaxHealth();
+        else
+            healthText.text = player.GetCurrentHealth() + "/" + player.GetMaxHealth();
         lifeBar.value = player.GetCurrentHealth();
-
     }
 
 }

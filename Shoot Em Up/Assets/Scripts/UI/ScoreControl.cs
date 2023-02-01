@@ -8,6 +8,8 @@ public class ScoreControl : MonoBehaviour
     private int playerScore = 0;
     [SerializeField] private Text scoreText;
     public bool playerDeath;
+    private bool save;
+    [SerializeField] private GameObject losepanel;
     
     private void Awake()
     {        
@@ -16,8 +18,13 @@ public class ScoreControl : MonoBehaviour
 
     private void Update()
     {
-        if (playerDeath)
+        if (playerDeath && !save)
+        {
             SaveScore();
+            save = true;
+            losepanel.SetActive(true);
+            
+        }            
         else
             UpdateText();                
     }
@@ -29,21 +36,24 @@ public class ScoreControl : MonoBehaviour
 
     public void SaveScore()
     {
-        Debug.Log(playerScore);
+        int puntuacion = PlayerPrefs.GetInt("Puntuacion");
         int aux;
         for (int i = 0; i <= 10; i++)
         {
-            if (playerScore > PlayerPrefs.GetInt("Puntuacion" + i))
+            if (puntuacion > PlayerPrefs.GetInt("Puntuacion" + i))
             {
                 aux = PlayerPrefs.GetInt("Puntuacion" + i);
-                PlayerPrefs.SetInt("Puntuacion" + i, playerScore);
-                playerScore = aux;
+                PlayerPrefs.SetInt("Puntuacion" + i, puntuacion);
+                puntuacion = aux;
             }
         }
+
+        
     }
     private void UpdateText()
     {
         scoreText.text = playerScore.ToString();
+        PlayerPrefs.SetInt("Puntuacion", playerScore);
     }
 
 }

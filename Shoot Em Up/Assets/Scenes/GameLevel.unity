@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0054370165, g: 0.0054370165, b: 0.0054370165, a: 1}
+  m_IndirectSpecularColor: {r: 0.0050336905, g: 0.0050336905, b: 0.0050336905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1154,6 +1154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1185469452}
   playerDeath: 0
+  losepanel: {fileID: 1209018849}
 --- !u!4 &541292332
 Transform:
   m_ObjectHideFlags: 0
