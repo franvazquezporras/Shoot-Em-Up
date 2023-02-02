@@ -47,6 +47,7 @@ public class ScoreControl : MonoBehaviour
                 puntuacion = aux;
             }
         }
+        Debug.Log("GUARDANDO PUNTOS " + PlayerPrefs.GetInt("Puntuacion"));
 
         
     }
