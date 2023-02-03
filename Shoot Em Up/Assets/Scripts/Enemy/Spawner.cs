@@ -10,8 +10,10 @@ public class Spawner : MonoBehaviour
     [SerializeField] private int waves;
     [SerializeField] private ScoreControl score;
     private GameObject bossAlive;
+
+    private int levelUnloked = 1;
     
-    private int levelGoal = 5000;
+    private int levelGoal = 2000;
     void Start()
     {
         InvokeRepeating("SpawnEnemy", rate, rate);
@@ -22,11 +24,18 @@ public class Spawner : MonoBehaviour
         if ((score.GetPlayerScore()>levelGoal || score.GetPlayerScore() % levelGoal ==0) && score.GetPlayerScore()>0 && bossAlive ==null)
         {
             bossAlive = Instantiate(bosses[Random.Range(0,bosses.Length)], new Vector3(11, Random.Range(-4.5f, 4.5f), 0), Quaternion.Euler(0f, 0f, -90f));    
-            levelGoal += 5000;
+            levelGoal += 2000;
+            levelUnloked++;
         }                            
         if (bossAlive == null)
             for (int i = 0; i < waves; i++)
-                Instantiate(enemies[(int)Random.Range(0, enemies.Length - 1)], new Vector3(11, Random.Range(-4.5f, 4.5f), 0), Quaternion.Euler(0f, 0f, 90f));
+            {
+                if(levelUnloked<enemies.Length)
+                    Instantiate(enemies[(int)Random.Range(0, levelUnloked)], new Vector3(11, Random.Range(-4.5f, 4.5f), 0), Quaternion.Euler(0f, 0f, 90f));
+                else
+                    Instantiate(enemies[(int)Random.Range(0, enemies.Length)], new Vector3(11, Random.Range(-4.5f, 4.5f), 0), Quaternion.Euler(0f, 0f, 90f));
+            }
+                
     }
 
 
