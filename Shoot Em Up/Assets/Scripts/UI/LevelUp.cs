@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class LevelUp : MonoBehaviour
 {
-    private void Awake()
+    private bool active;    
+    private void Update()
     {
-        StartCoroutine(ShowAndHide());
+        if (isActiveAndEnabled && !active)
+        {            
+            active = true;
+            StartCoroutine(ShowAndHide());
+        }            
     }
 
     IEnumerator ShowAndHide()
     {
         yield return new WaitForSeconds(3);
+        active = false;
         gameObject.SetActive(false);
     }
 }

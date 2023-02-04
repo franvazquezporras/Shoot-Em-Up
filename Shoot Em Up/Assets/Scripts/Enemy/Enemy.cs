@@ -18,11 +18,15 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float fireRate;
     [SerializeField] private float health;    
     [SerializeField] private GameObject[] cannons;
+    private int delay;
 
+    [Header("Boss")]
+    [SerializeField] private GameObject bomb;
+    [SerializeField] private GameObject[] bombCannons;
     [SerializeField] private bool isBoss;
     private bool bossDirection;
     [SerializeField] private Slider bossBar;
-    private int delay;
+    private int countShoot;
 
     private AudioSource audioSource;
     private ScoreControl scoreControl;
@@ -46,7 +50,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -101,10 +104,21 @@ public class Enemy : MonoBehaviour
             GameObject temp = (GameObject)Instantiate(bullet, cannons[i].transform.position, Quaternion.Euler(0f, 0f, 90f));
             temp.GetComponent<Projectile>().SetDirection();
         }
+        countShoot++;
+        if (countShoot >= 10)
+        {
+            for (int i = 0; i < bombCannons.Length; i++)
+            {
+                GameObject temp = (GameObject)Instantiate(bomb, bombCannons[i].transform.position, Quaternion.Euler(0f, 0f, 90f));
+                temp.GetComponent<Projectile>().SetDirection();
+            }
+            countShoot = 0;
+        }
+        
 
         if (isBoss)
         {
-            if (delay > 100)
+            if (delay > 500)
             {
                 if (transform.position.y >= 0)
                     ySpeed = Random.Range(-1, -0.1f);

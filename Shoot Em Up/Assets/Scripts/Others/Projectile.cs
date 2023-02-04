@@ -7,6 +7,8 @@ public class Projectile : MonoBehaviour
     private int direction = 1;
     private Rigidbody2D rb2d;
     [SerializeField] private GameObject explotion;
+    [SerializeField] private int speed;
+    [SerializeField] private bool isBomb;
 
     private void Awake()
     {        
@@ -18,7 +20,7 @@ public class Projectile : MonoBehaviour
 
     private void Update()
     {
-        rb2d.velocity = new Vector2(6*direction,0);
+        rb2d.velocity = new Vector2(speed*direction,0);
     }
 
     
@@ -37,7 +39,10 @@ public class Projectile : MonoBehaviour
         {
             if (collision.gameObject.layer == Layers.PLAYER)
             {
-                collision.GetComponent<PlayerController>().GetDamage(-1);
+                if (isBomb)
+                    collision.GetComponent<PlayerController>().GetDamage(-5);
+                else
+                    collision.GetComponent<PlayerController>().GetDamage(-1);
                 Instantiate(explotion, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }

@@ -9,7 +9,7 @@ public class SkyBox : MonoBehaviour
     [SerializeField]private Texture2D [] backgroundList;
 
     [SerializeField] ScoreControl scorePlayer;
-    private float rotateSpeed = 1.2f;
+    private float rotateSpeed = 0.2f;
     float exposureBackground =1;
     float fadeTiming = 1f;
     bool active;
