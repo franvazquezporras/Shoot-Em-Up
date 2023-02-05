@@ -11,7 +11,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject [] cannons;
     [SerializeField] private GameObject projectile;
     [SerializeField] private GameObject explotion;
-    
+    private int totalAmmo = 10;
+    private int ammo = 30;
+    private bool reloading;
+
 
     private AudioSource audioSource;    
 
@@ -37,8 +40,14 @@ public class PlayerController : MonoBehaviour
         rb2d.AddForce(new Vector2(Input.GetAxis("Horizontal") * speed, 0));
         rb2d.AddForce(new Vector2(0,Input.GetAxis("Vertical") * speed));
 
-        if (Input.GetKey(KeyCode.Space) && delay>50 && Time.timeScale !=0)
+        if (Input.GetKey(KeyCode.Space) && delay>50 && Time.timeScale !=0) 
             Shoot();
+        if (Input.GetKey(KeyCode.R) && !reloading)
+        {
+            Reload();
+            reloading = true;
+        }
+            
         delay++;
     }
 
@@ -56,12 +65,45 @@ public class PlayerController : MonoBehaviour
 
     private void Shoot()
     {
-        delay = 0;
-        for (int i = 0; i < cannons.Length; i++)
-            Instantiate(projectile, cannons[i].transform.position,Quaternion.Euler(0f,0f,90f));
-        audioSource.Play();
+        if (ammo > 0)
+        {
+            delay = 0;
+            for (int i = 0; i < cannons.Length; i++)
+                Instantiate(projectile, cannons[i].transform.position, Quaternion.Euler(0f, 0f, 90f));
+            audioSource.Play();
+            ammo--;
+        }else if(ammo<=0 && totalAmmo > 0)
+        {
+            Debug.Log("RELOAD");
+        }
+        else
+        {
+            Debug.Log("Sin municion");
+        }
+
+        Debug.Log(ammo + "/" + totalAmmo);
     }
 
+    private void Reload()
+    {
+        int aux = 30 - ammo;
+
+        if (totalAmmo >= 30 || ammo + totalAmmo > 30)
+        {
+            ammo = 30;
+            totalAmmo -= aux;
+        }
+        else if(totalAmmo>0)
+        {            
+            ammo += totalAmmo;
+            totalAmmo = 0;
+        }
+        else
+        {
+            Debug.Log("NO AMMO");
+        }
+        reloading = false;
+    }
 
     IEnumerator Hit()
     {
