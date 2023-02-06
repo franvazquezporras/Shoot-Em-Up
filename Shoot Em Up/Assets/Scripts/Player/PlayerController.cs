@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject [] cannons;
     [SerializeField] private GameObject projectile;
     [SerializeField] private GameObject explotion;
-    private int totalAmmo = 10;
-    private int ammo = 30;
+    private int totalAmmo = 100;
+    private int ammo = 3;
     private bool reloading;
 
 
@@ -23,9 +23,12 @@ public class PlayerController : MonoBehaviour
 
     public void SetCurrentHealth(int health) { currentHealth += health; }
     public void SetMaxHealth(int health) { maxHealth = health; } 
+
     public int GetCurrentHealth() { return currentHealth; }
     public int GetMaxHealth() { return maxHealth; }
 
+    public int GetTotalAmmo() { return totalAmmo; }
+    public int GetCurrentAmmo() { return ammo; }
     private void Awake()
     {
         currentHealth = maxHealth;
@@ -81,7 +84,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Sin municion");
         }
 
-        Debug.Log(ammo + "/" + totalAmmo);
+        
     }
 
     private void Reload()
