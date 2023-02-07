@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private GameObject projectile;
     [SerializeField] private GameObject explotion;
     private int totalAmmo = 100;
-    private int ammo = 3;
+    private int ammo = 30;
     private bool reloading;
 
 
@@ -21,9 +21,10 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb2d;
     [SerializeField] private float speed;
 
-    public void SetCurrentHealth(int health) { currentHealth += health; }
+    public void SetCurrentHealth(int health) { currentHealth = health; }
     public void SetMaxHealth(int health) { maxHealth = health; } 
-
+    public void SetCurrentAmmo(int currentAmmo) { ammo = currentAmmo; }
+    public void SetTotalAmmo(int tAmmo) { totalAmmo = tAmmo; }
     public int GetCurrentHealth() { return currentHealth; }
     public int GetMaxHealth() { return maxHealth; }
 
@@ -31,7 +32,9 @@ public class PlayerController : MonoBehaviour
     public int GetCurrentAmmo() { return ammo; }
     private void Awake()
     {
-        currentHealth = maxHealth;
+        if (gameObject.name == ("Player(Clone)"))        
+            currentHealth = maxHealth;
+  
         rb2d = GetComponent<Rigidbody2D>();
         audioSource = GetComponent<AudioSource>();
         
@@ -57,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
     public void GetDamage(int dmg)
     {
-        SetCurrentHealth(dmg);
+        currentHealth += dmg;
         StartCoroutine(Hit());
         if (currentHealth <= 0)
         {
@@ -82,9 +85,7 @@ public class PlayerController : MonoBehaviour
         else
         {
             Debug.Log("Sin municion");
-        }
-
-        
+        }        
     }
 
     private void Reload()
@@ -108,6 +109,21 @@ public class PlayerController : MonoBehaviour
         reloading = false;
     }
 
+    private void OnDestroy()
+    {
+        if (currentHealth > 0)
+        {         
+            PlayerPrefs.SetInt("CurrentAmmo", ammo);
+            PlayerPrefs.SetInt("TotalAmmo", totalAmmo);
+            PlayerPrefs.SetInt("CurrentHealth", currentHealth);
+        }
+        else
+        {         
+            PlayerPrefs.SetInt("CurrentAmmo", 30);
+            PlayerPrefs.SetInt("TotalAmmo", 100);
+            PlayerPrefs.SetInt("CurrentHealth", maxHealth);
+        }            
+    }
     IEnumerator Hit()
     {
         GetComponent<SpriteRenderer>().color = new Color(1, 0, 0);
