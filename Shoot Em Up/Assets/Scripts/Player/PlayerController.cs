@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
-   
+    
     void Update()
     {
         rb2d.AddForce(new Vector2(Input.GetAxis("Horizontal") * speed, 0));
@@ -56,7 +56,13 @@ public class PlayerController : MonoBehaviour
             
         delay++;
     }
-
+    public void PickAmmo(int ammobox)
+    {
+        if (totalAmmo + ammobox >= 1000)
+            totalAmmo = 1000;
+        else
+            totalAmmo += ammobox;
+    }
 
     public void GetDamage(int dmg)
     {
