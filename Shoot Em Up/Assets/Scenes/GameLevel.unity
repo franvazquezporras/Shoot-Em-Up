@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0062837545, g: 0.0062837545, b: 0.0062837545, a: 1}
+  m_IndirectSpecularColor: {r: 0.0060478696, g: 0.0060478696, b: 0.0060478696, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -809,39 +809,6 @@ RectTransform:
   m_AnchoredPosition: {x: 325, y: 200}
   m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &331921303 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3103582225767365860, guid: 9cb20efcd3864bf44af846bcd9a76960, type: 3}
-  m_PrefabInstance: {fileID: 3103582226463837385}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &331921304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 331921303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a6048393b792b64690402560ae107d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rate: 2
-  enemies:
-  - {fileID: 6730135792224810194, guid: ae65d9f2fa059b44bb3e6e472668e324, type: 3}
-  - {fileID: 6563062610930202395, guid: fb76351f5f624cf429dae1833f53f9ef, type: 3}
-  - {fileID: 3283682695373226694, guid: f7ceeab6bf139ed4eafba265f7172846, type: 3}
-  - {fileID: 6730135792224810194, guid: 0a97c156a71d0c342a1951c28eaef506, type: 3}
-  - {fileID: 3283682695373226694, guid: ab356c86ab389444c80a0cc6a772fca8, type: 3}
-  - {fileID: 3283682695373226694, guid: 0c94513318419824a8e8408b6500f77a, type: 3}
-  - {fileID: 3283682695373226694, guid: a5ef1b7301eb88e4299879b24aff377b, type: 3}
-  - {fileID: 3283682695373226694, guid: daf91789c76f2da4eb9cd42741c80505, type: 3}
-  - {fileID: 3283682695373226694, guid: 7e051a9ab80c77241b937b2cf37badfc, type: 3}
-  bosses:
-  - {fileID: 3283682695373226694, guid: b467a95c24fefd54e965c00edad65397, type: 3}
-  - {fileID: 3283682695373226694, guid: 3cfdb186fa47ade4a9e844678e009f83, type: 3}
-  waves: 2
-  score: {fileID: 541292331}
 --- !u!1 &342058297
 GameObject:
   m_ObjectHideFlags: 0
@@ -4361,6 +4328,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 331921304, guid: 9cb20efcd3864bf44af846bcd9a76960, type: 3}
+      propertyPath: score
+      value: 
+      objectReference: {fileID: 541292331}
     - target: {fileID: 3103582225767365860, guid: 9cb20efcd3864bf44af846bcd9a76960, type: 3}
       propertyPath: m_Name
       value: LimitsZone
