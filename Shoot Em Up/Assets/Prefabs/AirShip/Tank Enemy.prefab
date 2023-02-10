@@ -160,3 +160,8 @@ MonoBehaviour:
   fireRate: 0
   health: 8
   cannons: []
+  ammoBox: {fileID: 8112779105138952281, guid: 5f05cc25e59059e47ab969d988b8f789, type: 3}
+  bomb: {fileID: 0}
+  bombCannons: []
+  isBoss: 0
+  bossBar: {fileID: 0}

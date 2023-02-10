@@ -20,6 +20,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] private GameObject[] cannons;
     private int delay;
 
+    [Header("Drop")]
+    [SerializeField] private GameObject ammoBox;
+
     [Header("Boss")]
     [SerializeField] private GameObject bomb;
     [SerializeField] private GameObject[] bombCannons;
@@ -94,8 +97,15 @@ public class Enemy : MonoBehaviour
     {
         
         Instantiate(explotion, transform.position, Quaternion.identity);
+        Drop();
         scoreControl.SetPlayerScore(score);
         Destroy(gameObject);
+    }
+
+    private void Drop()
+    {
+        if(Random.Range(0,100)<50)
+            Instantiate(ammoBox, transform.position, Quaternion.identity);
     }
     private void Shoot()
     {

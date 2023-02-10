@@ -390,6 +390,7 @@ MonoBehaviour:
   cannons:
   - {fileID: 2644131799470058481}
   - {fileID: 7377427199924848942}
+  ammoBox: {fileID: 8112779105138952281, guid: f80ac55355236fe48b32f35927c9e38f, type: 3}
   bomb: {fileID: 7962276611369854132, guid: 0817b11734547a142b1c4b69f2daf020, type: 3}
   bombCannons:
   - {fileID: 1512839907286004239}

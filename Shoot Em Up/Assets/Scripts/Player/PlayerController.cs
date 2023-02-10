@@ -50,16 +50,16 @@ public class PlayerController : MonoBehaviour
             Shoot();
         if (Input.GetKey(KeyCode.R) && !reloading)
         {
-            Reload();
             reloading = true;
+            Reload();            
         }
             
         delay++;
     }
     public void PickAmmo(int ammobox)
     {
-        if (totalAmmo + ammobox >= 1000)
-            totalAmmo = 1000;
+        if (totalAmmo + ammobox >= 360)
+            totalAmmo = 360;
         else
             totalAmmo += ammobox;
     }
@@ -112,7 +112,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("NO AMMO");
         }
-        reloading = false;
+        StartCoroutine(ReloadCoolDown());
     }
 
     private void OnDestroy()
@@ -129,6 +129,11 @@ public class PlayerController : MonoBehaviour
             PlayerPrefs.SetInt("TotalAmmo", 100);
             PlayerPrefs.SetInt("CurrentHealth", maxHealth);
         }            
+    }
+    IEnumerator ReloadCoolDown()
+    {
+        yield return new WaitForSeconds(2f);
+        reloading = false;
     }
     IEnumerator Hit()
     {

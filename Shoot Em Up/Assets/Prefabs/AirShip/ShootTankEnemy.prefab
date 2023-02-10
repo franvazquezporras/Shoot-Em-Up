@@ -170,6 +170,11 @@ MonoBehaviour:
   cannons:
   - {fileID: 7531792755636205512}
   - {fileID: 4023270570066615954}
+  ammoBox: {fileID: 8112779105138952281, guid: 5f05cc25e59059e47ab969d988b8f789, type: 3}
+  bomb: {fileID: 0}
+  bombCannons: []
+  isBoss: 0
+  bossBar: {fileID: 0}
 --- !u!82 &3520965568603821928
 AudioSource:
   m_ObjectHideFlags: 0
