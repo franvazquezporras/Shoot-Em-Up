@@ -66,8 +66,12 @@ public class PlayerController : MonoBehaviour
 
     public void GetDamage(int dmg)
     {
+
         currentHealth += dmg;
-        StartCoroutine(Hit());
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
+        if(dmg<0)
+            StartCoroutine(Hit());
         if (currentHealth <= 0)
         {
             Instantiate(explotion, transform.position, Quaternion.identity);

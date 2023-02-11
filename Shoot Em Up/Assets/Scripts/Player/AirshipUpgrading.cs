@@ -6,7 +6,7 @@ public class AirshipUpgrading : MonoBehaviour
 {
     [SerializeField] private GameObject[] playerLevel;
     private ScoreControl scoreLevel;
-    private int airshipLevel = 50;
+    private int airshipLevel = 1000;
     private GameObject player;
     private int shipActive;
     private int ammo, totalAmmo, currentHealth;
@@ -51,7 +51,7 @@ public class AirshipUpgrading : MonoBehaviour
             shipActive++;
             SetPlayerParam();
         }            
-        else if (scoreLevel.GetPlayerScore() > 50 && shipActive<1)
+        else if (scoreLevel.GetPlayerScore() > 5000 && shipActive<1)
         {
             Destroy(player);
             player = Instantiate(playerLevel[1], player.transform.position, Quaternion.Euler(0, 0, -90f));
