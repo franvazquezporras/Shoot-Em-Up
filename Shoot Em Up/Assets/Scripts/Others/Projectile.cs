@@ -9,18 +9,24 @@ public class Projectile : MonoBehaviour
     [SerializeField] private GameObject explotion;
     [SerializeField] private int speed;
     [SerializeField] private bool isBomb;
+    private int damage = 1;
+    private ScoreControl score;
 
     private void Awake()
     {        
         rb2d = GetComponent<Rigidbody2D>();
-    
+        score = GameObject.Find("GameManager").GetComponent<ScoreControl>();
+        if (score.GetPlayerScore() > 10000)
+            damage = 3;
+        else if (score.GetPlayerScore() > 5000)
+            damage = 2;
     }
     
     public void SetDirection(){direction *= -1;}
 
     private void Update()
     {
-        rb2d.velocity = new Vector2(speed*direction,0);
+        rb2d.velocity = new Vector2(speed*direction,0);        
     }
 
     
@@ -30,7 +36,7 @@ public class Projectile : MonoBehaviour
         {
             if (collision.gameObject.layer == Layers.ENEMY)
             {
-                collision.GetComponent<Enemy>().GetDamage();
+                collision.GetComponent<Enemy>().GetDamage(damage);
                 Instantiate(explotion, transform.position, Quaternion.identity);
                 Destroy(gameObject);  
             }   

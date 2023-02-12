@@ -81,15 +81,15 @@ public class Enemy : MonoBehaviour
         
         if(collision.gameObject.layer == Layers.PLAYER)
         {
-            collision.gameObject.GetComponent<PlayerController>().GetDamage(-25);
-            GetDamage();
+            collision.gameObject.GetComponent<PlayerController>().GetDamage(-10);
+            GetDamage(10);
         }
             
     }
 
-    public void GetDamage()
+    public void GetDamage(int dmg)
     {
-        health--;
+        health-=dmg;
         if (health <= 0)
             Die();
     }
