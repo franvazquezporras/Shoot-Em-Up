@@ -4,21 +4,33 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    //Variables
+    [Header ("Parametros de oleadas")]
     [SerializeField] private float rate;
     [SerializeField] private GameObject[] enemies;
     [SerializeField] private GameObject[] bosses;
     [SerializeField] private int waves;
     [SerializeField] private ScoreControl score;
     private GameObject bossAlive;
-
-    private int levelUnloked = 1;
-    
+    private int levelUnloked = 1;    
     private int levelGoal = 2000;
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Start                                                                                                                 */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Invoca de forma repetida cada varios segundos el spawn de enemgios                                                */
+    /*********************************************************************************************************************************/
     void Start()
     {
         InvokeRepeating("SpawnEnemy", rate, rate);
     }
-
+    /*********************************************************************************************************************************/
+    /*Funcion: SpawnEnemy                                                                                                            */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Instancia los enemigos y actualiza el numero de enemigos distintos que pueden spawnear de forma aleatora, tambien */
+    /*             spawnea los bosses de forma aleatoria                                                                             */
+    /*********************************************************************************************************************************/
     private void SpawnEnemy()
     {
         if ((score.GetPlayerScore()>levelGoal || score.GetPlayerScore() % levelGoal ==0) && score.GetPlayerScore()>0 && bossAlive ==null)

@@ -434,12 +434,4 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         hideImage.SetActive(false);
     }
-   
-
-
-
-
-
-    //Ranking
-
 }

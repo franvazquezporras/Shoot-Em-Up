@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    private Rigidbody2D rb2d;
+    //Variables
+    public Rigidbody2D rb2d;
     [SerializeField] private GameObject bullet;
     [SerializeField] private GameObject explotion;
 
@@ -33,6 +34,14 @@ public class Enemy : MonoBehaviour
 
     private AudioSource audioSource;
     private ScoreControl scoreControl;
+
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Awake                                                                                                                 */
+    /*Desarrollador: Vazquez                                                                                                         */    
+    /*Descripción: Referencias de parametros del objeto                                                                              */
+    /*********************************************************************************************************************************/
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -42,7 +51,15 @@ public class Enemy : MonoBehaviour
         if (isBoss)
             bossBar.maxValue = health;
     }
-    
+
+
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Start                                                                                                                 */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Si el enemigo puede disparar invocara de forma repetida cada varios segundos un proyectil                         */
+    /*********************************************************************************************************************************/
     void Start()
     {
      
@@ -53,6 +70,11 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    /*********************************************************************************************************************************/
+    /*Funcion: Update                                                                                                                */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Controla el desplazamiento del enemigo en el eje x y su velocidad, si es boss controla tambien el eje y           */
+    /*********************************************************************************************************************************/
     void Update()
     {
 
@@ -76,6 +98,14 @@ public class Enemy : MonoBehaviour
         delay++;
     }
 
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: OnCollisionEnter2D                                                                                                    */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Parametros de entrada: collision (collider del objeto con el que colisiona)                                                    */
+    /*Descripción: Controla el desplazamiento del enemigo en el eje x y su velocidad, si es boss controla tambien el eje y           */
+    /*********************************************************************************************************************************/
     private void OnCollisionEnter2D(Collision2D collision)
     {
         
@@ -87,12 +117,28 @@ public class Enemy : MonoBehaviour
             
     }
 
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: GetDamage                                                                                                             */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Parametros de entrada: dmg (daño recibido)                                                                                     */
+    /*Descripción: Controla el daño recibido en el enemigo                                                                           */
+    /*********************************************************************************************************************************/
     public void GetDamage(int dmg)
     {
         health-=dmg;
         if (health <= 0)
             Die();
     }
+
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Die                                                                                                                   */
+    /*Desarrollador: Vazquez                                                                                                         */    
+    /*Descripción: Destruye el enemigo cuando llega a 0 de vida e invoca las particulas y drop y por ultimo suma los puntos          */
+    /*********************************************************************************************************************************/
     private void Die()
     {
         
@@ -102,11 +148,28 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Drop                                                                                                                  */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Dropea una caja de municiones de forma aleatoria  (50% de posibilidades)                                          */
+    /*********************************************************************************************************************************/
     private void Drop()
     {
         if(Random.Range(0,100)<50)
             Instantiate(ammoBox, transform.position, Quaternion.identity);
     }
+
+
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Shoot                                                                                                                 */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Invoca por cada cañon del enemigo un proyectil, si es el boss modifica cada varios frames su velocidad en y       */
+    /*              de forma aleatoria dentro de un rango                                                                            */
+    /*********************************************************************************************************************************/
     private void Shoot()
     {
         for (int i = 0; i < cannons.Length; i++)
