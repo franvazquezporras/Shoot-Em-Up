@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AirshipUpgrading : MonoBehaviour
 {
+    //Variables
     [SerializeField] private GameObject[] playerLevel;
     private ScoreControl scoreLevel;
     private int airshipLevel = 1000;
@@ -12,12 +13,23 @@ public class AirshipUpgrading : MonoBehaviour
     private int ammo, totalAmmo, currentHealth;
     [SerializeField] private GameObject levelUp;
 
+    /*********************************************************************************************************************************/
+    /*Funcion: Awake                                                                                                                 */
+    /*Desarrollador: Vazquez                                                                                                         */    
+    /*Descripción: Asigna la referencia y spawne el player inicial                                                                   */
+    /*********************************************************************************************************************************/
     private void Awake()
     {
         scoreLevel = GetComponent<ScoreControl>();
         player = Instantiate(playerLevel[0], transform.position, Quaternion.Euler(0,0,-90f));
     }
 
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Update                                                                                                                */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Controla cuando el jugador a superado un nivel                                                                    */
+    /*********************************************************************************************************************************/
     void Update()
     {
         if (scoreLevel.GetPlayerScore() > airshipLevel)
@@ -28,6 +40,12 @@ public class AirshipUpgrading : MonoBehaviour
         }            
     }
 
+
+    /*********************************************************************************************************************************/
+    /*Funcion: GetPlayerParam                                                                                                        */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Obtiene los ultimos parametros del player para la nueva nave                                                      */
+    /*********************************************************************************************************************************/
     private void GetPlayerParam()
     {
         currentHealth = player.GetComponent<PlayerController>().GetCurrentHealth();
@@ -35,12 +53,24 @@ public class AirshipUpgrading : MonoBehaviour
         totalAmmo = player.GetComponent<PlayerController>().GetTotalAmmo();
     }
 
+    /*********************************************************************************************************************************/
+    /*Funcion: SetPlayerParam                                                                                                        */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Guarda los ultimos parametros del player antes de modificar la nave                                               */
+    /*********************************************************************************************************************************/
     private void SetPlayerParam()
     {
         player.GetComponent<PlayerController>().SetCurrentHealth(currentHealth);
         player.GetComponent<PlayerController>().SetCurrentAmmo(ammo);
         player.GetComponent<PlayerController>().SetTotalAmmo(totalAmmo);
     }
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: ControlUpgrade                                                                                                        */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Controla cuando el jugador a superado los puntos suficientes para upgradear la nave sustituyendo la nave anterior */
+    /*********************************************************************************************************************************/
     private void ControlUpgrade()
     {
         GetPlayerParam();

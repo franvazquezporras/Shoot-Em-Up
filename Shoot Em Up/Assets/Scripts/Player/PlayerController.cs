@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb2d;
     [SerializeField] private float speed;
 
+
+    //GETTERS Y SETTERS DEL JUGADOR
     public void SetCurrentHealth(int health) { currentHealth = health; }
     public void SetMaxHealth(int health) { maxHealth = health; } 
     public void SetCurrentAmmo(int currentAmmo) { ammo = currentAmmo; }
@@ -30,6 +32,14 @@ public class PlayerController : MonoBehaviour
 
     public int GetTotalAmmo() { return totalAmmo; }
     public int GetCurrentAmmo() { return ammo; }
+
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Awake                                                                                                                 */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Asigna las referencias y comprueba la vida maxima del jugador                                                     */
+    /*********************************************************************************************************************************/
     private void Awake()
     {
         if (gameObject.name == ("Player(Clone)"))        
@@ -40,7 +50,12 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Update                                                                                                                */
+    /*Desarrollador: Vazquez                                                                                                         */    
+    /*Descripción: Controla el movimiento del jugador a traves de los Inputs y el disparo/recarga del mismo                          */
+    /*********************************************************************************************************************************/
     void Update()
     {
         rb2d.AddForce(new Vector2(Input.GetAxis("Horizontal") * speed, 0));
@@ -56,6 +71,15 @@ public class PlayerController : MonoBehaviour
             
         delay++;
     }
+
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: PickAmmo                                                                                                              */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Parametros de entrada:ammobox(Cantidad de municion obtenida)                                                                   */
+    /*Descripción: Controla la municion que recibe el jugador de una caja y el limite maximo de municiones stackeable                */
+    /*********************************************************************************************************************************/
     public void PickAmmo(int ammobox)
     {
         if (totalAmmo + ammobox >= 360)
@@ -64,6 +88,14 @@ public class PlayerController : MonoBehaviour
             totalAmmo += ammobox;
     }
 
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: GetDamage                                                                                                             */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Parametros de entrada:dmg(daño recibido)                                                                                       */
+    /*Descripción: Controla el daño que recibe el jugador y cuando este llega a 0 de vida los destruye                               */
+    /*********************************************************************************************************************************/
     public void GetDamage(int dmg)
     {
 
@@ -79,6 +111,13 @@ public class PlayerController : MonoBehaviour
         }            
     }
 
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Shoot                                                                                                                 */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Controla el disparo del jugador y el numero de balas en el cargador                                               */
+    /*********************************************************************************************************************************/
     private void Shoot()
     {
         if (ammo > 0)
@@ -98,6 +137,12 @@ public class PlayerController : MonoBehaviour
         }        
     }
 
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Reload                                                                                                                */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Controla la recarga del jugador, mientras  tenga municiones                                                       */
+    /*********************************************************************************************************************************/
     private void Reload()
     {
         int aux = 30 - ammo;
@@ -119,6 +164,15 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(ReloadCoolDown());
     }
 
+
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: OnDestroy                                                                                                             */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Controla que antes de ser destruida la nave setee los parametros del playerpreb ya sea para reiniciar o guardar   */
+    /*              los ultimos valores del jugador                                                                                  */
+    /*********************************************************************************************************************************/
     private void OnDestroy()
     {
         if (currentHealth > 0)
@@ -134,11 +188,26 @@ public class PlayerController : MonoBehaviour
             PlayerPrefs.SetInt("CurrentHealth", maxHealth);
         }            
     }
+
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: ReloadCoolDown                                                                                                        */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Controla el tiempo para volver a recargar                                                                         */
+    /*********************************************************************************************************************************/
     IEnumerator ReloadCoolDown()
     {
         yield return new WaitForSeconds(2f);
         reloading = false;
     }
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Hit                                                                                                                   */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Controla el parpadeo de la nave al recibir daño                                                                   */
+    /*********************************************************************************************************************************/
     IEnumerator Hit()
     {
         GetComponent<SpriteRenderer>().color = new Color(1, 0, 0);

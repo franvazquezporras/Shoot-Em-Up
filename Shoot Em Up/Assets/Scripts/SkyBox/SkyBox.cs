@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SkyBox : MonoBehaviour
 {
-    
+    //Variables
     [Header("Background Textures")]
     [SerializeField]private Texture2D [] backgroundList;
 
@@ -15,11 +15,25 @@ public class SkyBox : MonoBehaviour
     bool active;
     private int levelGoal = 1000;
 
- 
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Awake                                                                                                                 */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Asigna el primer valor del array al skybox texture                                                                */
+    /*********************************************************************************************************************************/
     private void Awake()
     {
         RenderSettings.skybox.mainTexture = backgroundList[0];
     }
+
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Update                                                                                                                */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Va rotando la textura del skybox para hacer efecto de movimiento, tambien cambia el fondo del mismo cada 1000     */
+    /*              puntos                                                                                                           */
+    /*********************************************************************************************************************************/
     void Update()
     {
         RenderSettings.skybox.SetFloat("_Rotation", Time.time * rotateSpeed);       
@@ -28,9 +42,13 @@ public class SkyBox : MonoBehaviour
             levelGoal += 1000;
             StartCoroutine(ExposureDown());            
         }
-            
-        
     }
+
+    /*********************************************************************************************************************************/
+    /*Funcion: ChangeTexture                                                                                                         */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Cambia la textura del skybox por una de las texturas de la lista                                                  */    
+    /*********************************************************************************************************************************/
 
     private void ChangeTexture()
     {
@@ -38,6 +56,12 @@ public class SkyBox : MonoBehaviour
         StartCoroutine(ExposureUp());
     }
 
+
+    /*********************************************************************************************************************************/
+    /*Funcion: ExposureDown                                                                                                          */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Reduce en el tiempo a 0 el exposure del skybox hasta y manda a cambiar el fondo del mismo                         */
+    /*********************************************************************************************************************************/
     IEnumerator ExposureDown()
     {
         active = true;
@@ -52,6 +76,12 @@ public class SkyBox : MonoBehaviour
     }
 
 
+
+    /*********************************************************************************************************************************/
+    /*Funcion: ExposureUp                                                                                                            */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Aumenta el parametro exposure del skybox hasta que sea visible                                                    */
+    /*********************************************************************************************************************************/
     IEnumerator ExposureUp()
     {
         float elapsedTime = 0.0f;

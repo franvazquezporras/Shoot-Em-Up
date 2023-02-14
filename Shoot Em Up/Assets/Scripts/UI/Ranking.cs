@@ -5,12 +5,19 @@ using UnityEngine.UI;
 
 public class Ranking : MonoBehaviour
 {
+    //Variables
     private Transform TablaContenedor;
     private Transform entradaRecord;
 
     private List<EntradaRecord> listaRecords;
     private List<Transform> posicionRecordEnTabla;
 
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Awake                                                                                                                 */
+    /*Desarrollador: Vazquez                                                                                                         */    
+    /*Descripción: Obtiene la lista de los 10 primero mejores puntajes                                                               */
+    /*********************************************************************************************************************************/
     private void Awake()
     {
         TablaContenedor = transform.Find("RecordsList");
@@ -42,6 +49,12 @@ public class Ranking : MonoBehaviour
     }
 
 
+    /*********************************************************************************************************************************/
+    /*Funcion: crearEntradaNueva                                                                                                     */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Parametros de entrada: entradarecord (puntaje),posicion(posicion obtenida),posicionEnTabla(posicion donde se visualizara)      */
+    /*Descripción: Por cada llamada asigna y escribe en la tabla los valores de los 10 primeros puntajes posicionados uno bajo otro  */
+    /*********************************************************************************************************************************/
     private void crearEntradaNueva(EntradaRecord entradarecord, Transform posicion, List<Transform> posicionEnTabla)
     {
         float posicionEntrada = 15f;
@@ -68,6 +81,8 @@ public class Ranking : MonoBehaviour
 
         posicionEnTabla.Add(entradaNueva);
     }
+
+    //Clase EntradaRecord la cual tiene el parametro de puntos
     private class EntradaRecord
     {
         public int puntuacion;

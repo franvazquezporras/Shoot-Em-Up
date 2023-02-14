@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class LevelUp : MonoBehaviour
 {
-    private bool active;    
+    //Variables
+    private bool active;
+
+    /*********************************************************************************************************************************/
+    /*Funcion: Update                                                                                                                */
+    /*Desarrollador: Vazquez                                                                                                         */    
+    /*Descripción: Activa el cartel de nivel superado y llama a la corrutina que luego lo ocultara                                   */
+    /*********************************************************************************************************************************/
     private void Update()
     {
         if (isActiveAndEnabled && !active)
@@ -14,6 +21,12 @@ public class LevelUp : MonoBehaviour
         }            
     }
 
+
+    /*********************************************************************************************************************************/
+    /*Funcion: ShowAndHide                                                                                                           */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Descripción: Tras unos segundos oculta el cartel de nivel superado                                                             */
+    /*********************************************************************************************************************************/
     IEnumerator ShowAndHide()
     {
         yield return new WaitForSeconds(3);
