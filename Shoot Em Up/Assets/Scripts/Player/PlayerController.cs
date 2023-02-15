@@ -15,7 +15,10 @@ public class PlayerController : MonoBehaviour
     private int ammo = 30;
     private bool reloading;
 
-
+    [Header("Audios Clips")]
+    [SerializeField] AudioClip shoot;
+    [SerializeField] AudioClip noAmmo;
+    [SerializeField] AudioClip reaload;
     private AudioSource audioSource;    
 
     Rigidbody2D rb2d;
@@ -61,7 +64,7 @@ public class PlayerController : MonoBehaviour
         rb2d.AddForce(new Vector2(Input.GetAxis("Horizontal") * speed, 0));
         rb2d.AddForce(new Vector2(0,Input.GetAxis("Vertical") * speed));
 
-        if (Input.GetKey(KeyCode.Space) && delay>50 && Time.timeScale !=0) 
+        if (Input.GetKey(KeyCode.Space) && delay>50 && Time.timeScale !=0 && !reloading) 
             Shoot();
         if (Input.GetKey(KeyCode.R) && !reloading)
         {
@@ -125,16 +128,14 @@ public class PlayerController : MonoBehaviour
             delay = 0;
             for (int i = 0; i < cannons.Length; i++)
                 Instantiate(projectile, cannons[i].transform.position, Quaternion.Euler(0f, 0f, 90f));
-            audioSource.Play();
+            audioSource.clip = shoot;
             ammo--;
         }else if(ammo<=0 && totalAmmo > 0)
         {
-            Debug.Log("RELOAD");
+            audioSource.clip = noAmmo;
+         
         }
-        else
-        {
-            Debug.Log("Sin municion");
-        }        
+        audioSource.Play();
     }
 
 
@@ -147,21 +148,29 @@ public class PlayerController : MonoBehaviour
     {
         int aux = 30 - ammo;
 
-        if (totalAmmo >= 30 || ammo + totalAmmo > 30)
+        if (ammo == 30)
         {
-            ammo = 30;
-            totalAmmo -= aux;
-        }
-        else if(totalAmmo>0)
-        {            
-            ammo += totalAmmo;
-            totalAmmo = 0;
-        }
+            Debug.Log("RELOADED");
+            reloading = false;
+        }            
         else
         {
-            Debug.Log("NO AMMO");
+            if (totalAmmo >= 30 || ammo + totalAmmo > 30)
+            {
+                ammo = 30;
+                totalAmmo -= aux;
+
+            }
+            else if (totalAmmo > 0)
+            {
+                ammo += totalAmmo;
+                totalAmmo = 0;
+            }
+            audioSource.clip = reaload;
+            audioSource.Play();
+            StartCoroutine(ReloadCoolDown());
         }
-        StartCoroutine(ReloadCoolDown());
+        
     }
 
 

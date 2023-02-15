@@ -168,6 +168,9 @@ MonoBehaviour:
   - {fileID: 1488114936639823363}
   projectile: {fileID: 3402350098004741224, guid: 2e8112961dc649e439a88ce58b1aca9d, type: 3}
   explotion: {fileID: 8038344524183138613, guid: 0277167a12290af47801444830a2be97, type: 3}
+  shoot: {fileID: 8300000, guid: 5ff5bd936a30a904da907f35c8dd382e, type: 3}
+  noAmmo: {fileID: 8300000, guid: 5034636124c582b4893800f869124732, type: 3}
+  reaload: {fileID: 8300000, guid: 835650bb09b06a64283da59cab58afde, type: 3}
   speed: 3
 --- !u!50 &6235834773499860771
 Rigidbody2D:

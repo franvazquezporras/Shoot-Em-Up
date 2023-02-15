@@ -2076,6 +2076,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1368877769}
     - target: {fileID: 821129308, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 821129308, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 821129308, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1368877769}
@@ -2096,9 +2104,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1368877769}
     - target: {fileID: 821129308, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 821129308, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: ShowPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 821129308, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: MainMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 821129308, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1334813018}
+    - target: {fileID: 821129308, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7247582807500241148, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
