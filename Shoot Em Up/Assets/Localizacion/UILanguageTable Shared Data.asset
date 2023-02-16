@@ -95,6 +95,26 @@ MonoBehaviour:
     m_Key: TLeaveGame
     m_Metadata:
       m_Items: []
+  - m_Id: 12676049778425856
+    m_Key: TAmmo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12677634415837184
+    m_Key: TResume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12678649911361536
+    m_Key: TLevelUP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12678875086766080
+    m_Key: TGameOver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12679015470120960
+    m_Key: TRetry
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

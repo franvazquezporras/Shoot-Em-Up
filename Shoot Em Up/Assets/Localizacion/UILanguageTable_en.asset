@@ -98,5 +98,25 @@ MonoBehaviour:
     m_Localized: Are you sure you want to close the game?
     m_Metadata:
       m_Items: []
+  - m_Id: 12676049778425856
+    m_Localized: 'Ammo:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12677634415837184
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12678649911361536
+    m_Localized: Level Up!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12678875086766080
+    m_Localized: Game Over
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12679015470120960
+    m_Localized: Retry
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

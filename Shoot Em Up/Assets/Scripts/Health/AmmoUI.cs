@@ -37,7 +37,7 @@ public class AmmoUI : MonoBehaviour
         
         if (player.GetCurrentAmmo() <= 0 && Input.GetKey(KeyCode.Space))
             StartCoroutine(Hit());
-        ammoText.text = "Ammo: " + player.GetCurrentAmmo() + "/" + player.GetTotalAmmo();
+        ammoText.text = player.GetCurrentAmmo() + "/" + player.GetTotalAmmo();
     }
 
 

@@ -98,5 +98,25 @@ MonoBehaviour:
     m_Localized: "\xBFEst\xE1s seguro de que quieres cerrar el juego?"
     m_Metadata:
       m_Items: []
+  - m_Id: 12676049778425856
+    m_Localized: "Munici\xF3n:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12677634415837184
+    m_Localized: Continuar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12678649911361536
+    m_Localized: Sube Nivel!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12678875086766080
+    m_Localized: Fin del juego
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12679015470120960
+    m_Localized: Reintentar
+    m_Metadata:
+      m_Items: []
   references:
     version: 1
