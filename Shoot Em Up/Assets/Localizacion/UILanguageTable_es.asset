@@ -118,5 +118,9 @@ MonoBehaviour:
     m_Localized: Reintentar
     m_Metadata:
       m_Items: []
+  - m_Id: 12703083451826176
+    m_Localized: Idioma
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

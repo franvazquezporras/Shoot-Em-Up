@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization.Settings;
 public class MainMenu : MonoBehaviour
 {
 
@@ -20,6 +21,9 @@ public class MainMenu : MonoBehaviour
 
     [Header("Quality")]
     [SerializeField] private Dropdown qualityDropdown;
+
+    [Header("Language")]
+    [SerializeField] private Dropdown languageDropdown;
 
     [Header("Brightness")]
     [SerializeField] private Image brightnessPanel;
@@ -88,8 +92,23 @@ public class MainMenu : MonoBehaviour
         if (!firstLoad)
             update = true;
     }
-
-
+    /*********************************************************************************************************************************/
+    /*Funcion: SetLanguage                                                                                                           */
+    /*Desarrollador: Vazquez                                                                                                         */
+    /*Parametros de entrada: language (idioma seleccionada del dropbox)                                                              */
+    /*Descripción: Modifica el idioma del juego                                                                                      */
+    /*********************************************************************************************************************************/
+    public void SetLanguage(int language)
+    {
+        SystemLanguage languageS = language switch
+        {
+            0 => SystemLanguage.Spanish,
+            1 => SystemLanguage.English,
+            _ => SystemLanguage.Spanish,
+        };        
+        GetComponent<LocalizationManager>().SetLanguage(languageS);
+    }
+   
     /*********************************************************************************************************************************/
     /*Funcion: SetMasterVolume                                                                                                       */
     /*Desarrollador: Vazquez                                                                                                         */
@@ -266,6 +285,7 @@ public class MainMenu : MonoBehaviour
     /*********************************************************************************************************************************/
     private void LoadSetting()
     {
+        SetLanguage(languageDropdown.value);
         SetFullScreen(fullscreenCheck.isOn);
         SetQuality(qualityDropdown.value);
         SetResolution(resolutionDropdown.value);
@@ -285,6 +305,7 @@ public class MainMenu : MonoBehaviour
             fullscreenCheck.isOn = true;
         else
             fullscreenCheck.isOn = false;
+        languageDropdown.value = PlayerPrefs.GetInt("language",1);
         qualityDropdown.value = PlayerPrefs.GetInt("quality", 0);
         resolutionDropdown.value = PlayerPrefs.GetInt("resolution", 0);
         brightnessSlider.value = PlayerPrefs.GetFloat("Brightness", 0f);
@@ -327,6 +348,7 @@ public class MainMenu : MonoBehaviour
             PlayerPrefs.SetInt("fullScreen", 1);
         else
             PlayerPrefs.SetInt("fullScreen", 0);
+        PlayerPrefs.SetInt("language", languageDropdown.value);
         PlayerPrefs.SetInt("quality", QualitySettings.GetQualityLevel());
         PlayerPrefs.SetInt("resolution", resolutionDropdown.value);
         PlayerPrefs.SetFloat("Brightness", brightnessSlider.value);

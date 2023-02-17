@@ -862,6 +862,7 @@ GameObject:
   - component: {fileID: 1368877766}
   - component: {fileID: 1368877765}
   - component: {fileID: 1368877769}
+  - component: {fileID: 1368877770}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -972,6 +973,7 @@ MonoBehaviour:
   resolutionDropdown: {fileID: 1015720101}
   fullscreenCheck: {fileID: 1175270372}
   qualityDropdown: {fileID: 1420980626}
+  languageDropdown: {fileID: 7247582809256146515}
   brightnessPanel: {fileID: 886710648}
   brightnessSlider: {fileID: 1519356985}
   audioMixer: {fileID: 24100000, guid: 9821bbabfedbefa46951bb2d9d0bd75d, type: 2}
@@ -981,6 +983,18 @@ MonoBehaviour:
   soundVolume: {fileID: 1756827310}
   soundButton: {fileID: 1517885360}
   musicButton: {fileID: 1346241395}
+--- !u!114 &1368877770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368877764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7ab1d117d5c8d94db34f05494f113a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1420980626 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7247582808506550208, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
@@ -2295,5 +2309,36 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1368877769}
+    - target: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1368877769}
+    - target: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetLanguage
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+--- !u!114 &7247582809256146515 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+  m_PrefabInstance: {fileID: 7247582809256146514}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d0b652f32a2cc243917e4028fa0f046, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
