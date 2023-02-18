@@ -107,6 +107,9 @@ public class MainMenu : MonoBehaviour
             _ => SystemLanguage.Spanish,
         };        
         GetComponent<LocalizationManager>().SetLanguage(languageS);
+        if(!firstLoad)
+            update = true;
+        
     }
    
     /*********************************************************************************************************************************/
@@ -323,7 +326,7 @@ public class MainMenu : MonoBehaviour
     {
         LoadSetting();
         LoadOptionsUI();
-        update = false;
+        update = false;        
     }
 
     /*********************************************************************************************************************************/
