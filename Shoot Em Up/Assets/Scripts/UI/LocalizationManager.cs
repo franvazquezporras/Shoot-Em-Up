@@ -1,10 +1,8 @@
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 
-public class LocalizationManager : Singleton<LocalizationManager>
+public class LocalizationManager : MonoBehaviour
 {
-    private new void Awake() => base.Awake();
-
     public void SetLanguage(SystemLanguage systemLanguage)
     {
         string language = systemLanguage switch
