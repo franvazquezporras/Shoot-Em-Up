@@ -119,6 +119,14 @@ MonoBehaviour:
     m_Key: TLanguages
     m_Metadata:
       m_Items: []
+  - m_Id: 14183749200822272
+    m_Key: TOk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14187233723727872
+    m_Key: TInfoLanguage
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

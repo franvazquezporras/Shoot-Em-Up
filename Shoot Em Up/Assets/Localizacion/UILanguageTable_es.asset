@@ -122,5 +122,13 @@ MonoBehaviour:
     m_Localized: Idioma
     m_Metadata:
       m_Items: []
+  - m_Id: 14183749200822272
+    m_Localized: Vale
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14187233723727872
+    m_Localized: Changes made will take effect when saving
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

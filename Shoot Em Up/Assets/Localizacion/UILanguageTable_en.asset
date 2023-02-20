@@ -122,5 +122,13 @@ MonoBehaviour:
     m_Localized: Language
     m_Metadata:
       m_Items: []
+  - m_Id: 14183749200822272
+    m_Localized: OK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14187233723727872
+    m_Localized: "Los cambios realizados tendr\xE1n efectos al guardar"
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

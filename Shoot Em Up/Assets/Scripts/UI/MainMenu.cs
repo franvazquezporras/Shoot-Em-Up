@@ -109,7 +109,12 @@ public class MainMenu : MonoBehaviour
         GetComponent<LocalizationManager>().SetLanguage(languageS);
         if(!firstLoad)
             update = true;
-        
+
+    }    
+    public void Refresh(GameObject panel)
+    {
+        if (!firstLoad)        
+            ShowPanel(panel);        
     }
    
     /*********************************************************************************************************************************/
