@@ -130,11 +130,11 @@ public class PlayerController : MonoBehaviour
                 Instantiate(projectile, cannons[i].transform.position, Quaternion.Euler(0f, 0f, 90f));
             audioSource.clip = shoot;
             ammo--;
-        }else if(ammo<=0 && totalAmmo > 0)
+        }else if(ammo<=0 || (ammo <= 0 && totalAmmo <= 0))
         {
             audioSource.clip = noAmmo;
-         
-        }
+
+        }        
         audioSource.Play();
     }
 

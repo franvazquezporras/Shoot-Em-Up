@@ -2322,6 +2322,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1334813018}
+    - target: {fileID: 7247582808790905943, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1334813018}
     - target: {fileID: 7247582808912830199, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2338,6 +2342,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1368877769}
+    - target: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[0].m_Text
+      value: Spanish
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
+      propertyPath: m_Options.m_Options.Array.data[1].m_Text
+      value: English
+      objectReference: {fileID: 0}
     - target: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
       value: 2

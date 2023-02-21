@@ -42,6 +42,7 @@ public class MainMenu : MonoBehaviour
     private bool music;
     private bool firstLoad = true;
 
+
     private bool update = false;
     /*********************************************************************************************************************************/
     /*Funcion: Start                                                                                                                 */
@@ -112,7 +113,7 @@ public class MainMenu : MonoBehaviour
 
     }    
     public void Refresh(GameObject panel)
-    {
+    {        
         if (!firstLoad)        
             ShowPanel(panel);        
     }
