@@ -41,7 +41,7 @@ public class MainMenu : MonoBehaviour
     private bool sound;
     private bool music;
     private bool firstLoad = true;
-
+    private bool languageSet;
 
     private bool update = false;
     /*********************************************************************************************************************************/
@@ -100,7 +100,7 @@ public class MainMenu : MonoBehaviour
     /*Descripción: Modifica el idioma del juego                                                                                      */
     /*********************************************************************************************************************************/
     public void SetLanguage(int language)
-    {
+    {        
         SystemLanguage languageS = language switch
         {
             0 => SystemLanguage.Spanish,
@@ -108,15 +108,11 @@ public class MainMenu : MonoBehaviour
             _ => SystemLanguage.Spanish,
         };        
         GetComponent<LocalizationManager>().SetLanguage(languageS);
+            
         if(!firstLoad)
             update = true;
 
     }    
-    public void Refresh(GameObject panel)
-    {        
-        if (!firstLoad)        
-            ShowPanel(panel);        
-    }
    
     /*********************************************************************************************************************************/
     /*Funcion: SetMasterVolume                                                                                                       */
@@ -330,8 +326,8 @@ public class MainMenu : MonoBehaviour
     /*********************************************************************************************************************************/
     public void Deny()
     {
-        LoadSetting();
         LoadOptionsUI();
+        LoadSetting();        
         update = false;        
     }
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.007409475, g: 0.007409475, b: 0.007409475, a: 1}
+  m_IndirectSpecularColor: {r: 0.0037994836, g: 0.0037994836, b: 0.0037994836, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2880,7 +2880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -2941,7 +2941,7 @@ PrefabInstance:
     - target: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 2127672881}
+      objectReference: {fileID: 0}
     - target: {fileID: 7374305502911954800, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
@@ -4916,11 +4916,6 @@ MonoBehaviour:
         m_CallState: 2
   references:
     version: 1
---- !u!1 &2127672881 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7021308365723723267, guid: 09cfe73f0d93a984baea1728995e4afb, type: 3}
-  m_PrefabInstance: {fileID: 1337509861}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1964217438880165663
 PrefabInstance:
   m_ObjectHideFlags: 0

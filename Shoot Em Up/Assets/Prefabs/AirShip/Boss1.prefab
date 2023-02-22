@@ -274,6 +274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cece7d7b58d4fe24581ccf5e7b074bbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb2d: {fileID: 0}
   bullet: {fileID: 3402350098004741224, guid: a787a2808ab046441a153ea05c77217b, type: 3}
   explotion: {fileID: 4794043405585894037, guid: 37138c0c33167b04fa1fb90b7f5a794f, type: 3}
   xSpeed: 1
@@ -281,7 +282,7 @@ MonoBehaviour:
   score: 250
   canShoot: 1
   fireRate: 1
-  health: 200
+  health: 100
   cannons:
   - {fileID: 2644131799470058481}
   - {fileID: 7377427199924848942}
