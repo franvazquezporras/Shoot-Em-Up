@@ -44,3 +44,13 @@ When the player's life reaches zero, they are destroyed, and their score is save
 *Comment:*
 
 During my training, I created a low-quality shoot em up game and wanted to give it a facelift by starting from scratch to add new mechanics and apply the algorithms I learned throughout my training.
+
+
+![image](https://github.com/franvazquezporras/Shoot-Em-Up/assets/45006637/c76c156b-6ddc-4685-b030-962d64bc6b03)
+
+![image](https://github.com/franvazquezporras/Shoot-Em-Up/assets/45006637/d85155e4-a92e-4192-825e-bf3174ac08d3)
+
+![image](https://github.com/franvazquezporras/Shoot-Em-Up/assets/45006637/86ed0012-9772-4536-be6d-79314518c31b)
+
+
+
